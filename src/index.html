@@ -5,19 +5,51 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body onLoad="myOnLoad()">
+  <body>
     <div id="root"></div>
 
-    <p><b> Indicadores de género: </b></p>
+    <p><b> Selecciona el país</b></p>
 
-          <select name="peruIndicators">
-         <option>Seleccione un indicador</option>
-        </select>
-            
+    <button id=peru_button onclick="alert('No soy Brasil')">Perú</button>
+
+    <button id=brasil_button>Brasil</button>
+
+    <button id=mexico_button>México</button>
+    
+    <button id=chile_button>Chile</button>
+
+    <div id="thirdScreen">
+
+     <p> Selecciona un tipo de indicador </p>
+
+    <button id=economicButton>Económico</button>
+
+    <button id=laboralButton>Fuerza Laboral</button>
+
+    <button id=educativeButton>Educativo</button>
+
+
+
+    </div>
+    <p>
+         <input list="theCountry" id="listCountry" placeholder="Selecciona el país"> <!--Decidí desplazar la lista de rangos ya definidos-->
+         <datalist id="theCountry">
+           <option value="Peru"></option>
+           <option value="México"></option>
+           <option value="Brasil"></option>
+           <option value="Chile"></option>
+         </datalist>
+         
+       </p> 
+
+       <label id='rankWelcome'> </label>
+
 
     <script src="./data/worldbank/worldbank.js"></script>
+    <script src="arrays.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+    
   </body>
 </html>
 
