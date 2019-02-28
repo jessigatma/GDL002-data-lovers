@@ -283,3 +283,32 @@ const returnedPerIndicators = Object.assign(perIndicators[i], nuevakey);
 console.log(returnedPerIndicators);
 }
 */
+
+//------------- para obtene el tipo de indicador
+
+//const data1 = WORLDBANK.PER.indicators;
+//const  data2= data1.filter(indicator => indicator.indicatorCode.includes("IC."));
+//console.log(data2);
+
+//console.log(WORLDBANK.PER.indicators.filter(indicator => indicator.indicatorCode.includes("IC.")));
+//console.log(WORLDBANK.PER.indicators)
+
+
+
+//---------------MUESTRA LOS INDICADORES EN EL MENÚ DE DESPLAZAMIENTO
+
+/*
+function showPeruIndicators(){        
+
+    const dataPerIndicators = WORLDBANK.PER.indicators;
+    const select = document.getElementById("peruindicadores");
+
+    dataPerIndicators.forEach(function (element) {
+        let option = document.createElement("option")
+        //console.log(element.indicatorName);
+        option.innerHTML = element.indicatorName;
+        select.appendChild(option);
+    });
+}
+showPeruIndicators();    
+*/
