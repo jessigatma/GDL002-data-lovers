@@ -42,7 +42,7 @@ indicatorByYear.forEach(function(element){
 */
 
 //------------------- por país --------------
-
+/*
 const loadCountry = (loadIndicator) => {  // Declarar una función para que me genere las opciones de paises, y que me genere automaticamente mis opciones de indicadpres por país (se escribe como argumento y despues se va a declarar como función)
   const ctOptions = Object.keys(WORLDBANK) ;  // Declarar una variable que traiga los Object.keys de mi objeto global(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
   for (let i = 0; i < ctOptions.length; i++) {  // ciclo for 
@@ -53,7 +53,7 @@ const loadCountry = (loadIndicator) => {  // Declarar una función para que me g
   }
 };
 
-
+*/
  
  /*
  let indMex = WORLDBANK.MEX.indicators;
@@ -204,8 +204,8 @@ ctSelector.addEventListener ("change", showIndicator)
 */
 
 
-const pegamos= WORLDBANK.BRA.indicators.map(({indicatorCode,indicatorName,}) => [` ${indicatorName}`]);
-console.log(pegamos);
+//const pegamos= WORLDBANK.BRA.indicators.sort(({indicatorName,}) => [` ${indicatorName}`]);
+//console.log(pegamos);
 
 //const datoscondatos = WORLDBANK.PER.indicators.filter( indicador => (indicador.data > '2002')); //aquí no se puede porque los años son string y no number
 
@@ -272,3 +272,14 @@ console.log(datos2);*/
 
 
 //console.log(Object.values(WORLDBANK.PER.indicators));
+
+/*
+const perIndicators = WORLDBANK.PER.indicators;
+const nuevakey = {clasificacion: "fuerza laboral"};
+
+for (let i=0; i<= perIndicators.length; i++) {
+const returnedPerIndicators = Object.assign(perIndicators[i], nuevakey);
+
+console.log(returnedPerIndicators);
+}
+*/

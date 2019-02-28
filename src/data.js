@@ -6,3 +6,9 @@
 };
 
 window.example = example; */
+
+//const pegamos1= WORLDBANK.MEX.indicators.map(({indicatorCode,}) => [` ${indicatorCode}`]);
+//console.log(pegamos1);
+
+console.log(WORLDBANK.MEX.indicators.filter(indicator => indicator.indicatorCode.includes("IC.")));
+console.log(WORLDBANK.MEX.indicators)
