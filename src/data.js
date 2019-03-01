@@ -16,8 +16,8 @@ const  data2= data1.filter(indicator => indicator.indicatorCode.includes("IC."))
 
 // -------- del tipo de indicador que se escoge, vemos los datos: año-%
 
-let aniosindicador=Object.entries(data2[0].data); //el objeto lo convertimos en array 57 arreglos (1960 - 2017) de 2 entradas
- //console.log(aniosindicador);
+const  aniosindicador=Object.entries(data2[0].data); //el objeto lo convertimos en array 57 arreglos (1960 - 2017) de 2 entradas
+// console.log(aniosindicador);
 
 aniosindicador.forEach(function(anios){ //me imprime todos los años
   //console.log(`año: ${anios[0]}   porcentaje: ${anios[1]}`)

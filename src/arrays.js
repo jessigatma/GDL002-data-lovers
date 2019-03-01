@@ -1,4 +1,4 @@
-newWorldBank = [WORLDBANK.PER.indicators[2], WORLDBANK.PER.indicators[3],WORLDBANK.PER.indicators[11],
+/*newWorldBank = [WORLDBANK.PER.indicators[2], WORLDBANK.PER.indicators[3],WORLDBANK.PER.indicators[11],
 WORLDBANK.PER.indicators[12],WORLDBANK.PER.indicators[14],WORLDBANK.PER.indicators[15],WORLDBANK.PER.indicators[17], 
 WORLDBANK.PER.indicators[18],WORLDBANK.PER.indicators[107],WORLDBANK.PER.indicators[109],WORLDBANK.PER.indicators[38],
 WORLDBANK.PER.indicators[39],WORLDBANK.PER.indicators[45],WORLDBANK.PER.indicators[46],WORLDBANK.PER.indicators[47],
@@ -20,16 +20,16 @@ WORLDBANK.CHL.indicators[15],WORLDBANK.CHL.indicators[17],WORLDBANK.CHL.indicato
 WORLDBANK.CHL.indicators[45],WORLDBANK.CHL.indicators[46],WORLDBANK.CHL.indicators[47],WORLDBANK.CHL.indicators[50],WORLDBANK.CHL.indicators[102],
 WORLDBANK.CHL.indicators[103],WORLDBANK.CHL.indicators[104],WORLDBANK.CHL.indicators[106],WORLDBANK.CHL.indicators[107],WORLDBANK.CHL.indicators[109],
 WORLDBANK.CHL.indicators[120],WORLDBANK.CHL.indicators[125],WORLDBANK.CHL.indicators[129],WORLDBANK.CHL.indicators[134],WORLDBANK.CHL.indicators[135]];
-
+*/
 //console.log(WORLDBANK);
 
-const pegamos= WORLDBANK.BRA.indicators.map(({indicatorCode,indicatorName,}) => [`${indicatorCode}, ${indicatorName}`]);
+//const pegamos= WORLDBANK.BRA.indicators.map(({indicatorCode,indicatorName,}) => [`${indicatorCode}, ${indicatorName}`]);
 //console.log(pegamos);
 
 
-let newData= WORLDBANK.PER.indicators.filter(function(el){
+/*let newData= WORLDBANK.PER.indicators.filter(function(el){
     return (el.indicatorCode ==='SH.ANM.ALLW.ZS'); 
-  });
+  });*/
  //console.log(newData);
 
 //const newdataper = WORLDBANK.PER.indicators;
