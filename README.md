@@ -6,7 +6,7 @@
 - [Historias de Usuario](#historias-de-usuario)
 - [Sketch de baja fidelidad](#sketch-de-baja-fidelidad)
 - [Diseño de la interfaz de usuario en alta fidelidad](#diseño-de-la-interfaz-de-usuario-en-alta-fidelidad)
-
+- [Resultados](#resultados)
 ---
 
 ## Definición del Producto
@@ -36,7 +36,7 @@ La página es para personas de habla hispana, mayores de 15 años que buscan inf
 
 - El usuario necesita observar ese indicador escogido en una tabla con los años desde 1960  hasta 2017 y ver el promedio de este indicador a lo largo de esos años.
 
-## Sketh (baja fidelidad)
+## Sketh de baja fidelidad
 
 Nuestro primer prototipo consistió en ponerlo de esta manera con la idea de que los indicadores serían de varios temas. Y nuestro usuario sería un estudiante de preparatoria.
 
@@ -67,7 +67,7 @@ Finalmente, la pantalla donde ya que el usuario seleccionó el indicador de su p
 ![imagen6](https://github.com/jessigatma/GDL002-data-lovers/blob/master/images/IMG_20190303_114934895.jpg)
 
 
-## Diseño de la interfaz de usuario (alta fidelidad)
+## Diseño de la interfaz de usuario en alta fidelidad
 
 
 
