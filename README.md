@@ -4,8 +4,9 @@
 
 - [Definición del Producto](#definición-del-producto)
 - [Historias de Usuario](#historias-de-usuario)
-- [Sketch (baja fidelidad)](#sketch)
-- [Diseño de la interfaz de usuario (alta fidelidad)](#diseño-de-la-interfaz-de-usuario)
+- [Sketch de baja fidelidad](#sketch-de-baja-fidelidad)
+- [Diseño de la interfaz de usuario en alta fidelidad](#diseño-de-la-interfaz-de-usuario-en-alta-fidelidad)
+
 ---
 
 ## Definición del Producto
