@@ -43,6 +43,7 @@ Nuestro primer prototipo consistió en ponerlo de esta manera con la idea de que
 [imagen1](../sketchbf/IMG_20190303_114858558.jpg)
 
 Al observar el tipo de datos que teníamos en el archivo worldbank.js decidimos cambiar el usuario por gente interesada en estudios de género. 
+
 [imagen2](../sketchbf/Imagen de iOS.jpg)
 
 En la imagen anterior nos dimos cuenta que faltaba información al usuario y no cumplía con el objetivo de hacerlo sencillo para cualquier persona
