@@ -40,7 +40,7 @@ La página es para personas de habla hispana, mayores de 15 años que buscan inf
 
 Nuestro primer prototipo consistió en ponerlo de esta manera con la idea de que los indicadores serían de varios temas. Y nuestro usuario sería un estudiante de preparatoria.
 
-[imagen1](images/IMG_20190303_114858558.jpg)
+[imagen1](IMG_20190303_114858558.jpg)
 
 Al observar el tipo de datos que teníamos en el archivo worldbank.js decidimos cambiar el usuario por gente interesada en estudios de género. 
 
