@@ -1,3 +1,20 @@
+ //---------------MUESTRA LOS AÑOS--------------------------
+
+/*function showAnios(){
+
+    const dataPerIndicators = WORLDBANK.PER.indicators;
+    const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
+    const anioEconomicIndicator = Object.entries(dataEconomicIndicator[0].data); //el objeto lo convertimos en array 57 arreglos (1960 - 2017) de 2 entradas
+    const select = document.getElementById("anios"); //ve a los elemntos del select con id anios
+ 
+    anioEconomicIndicator.forEach(function(element){
+        let option = document.createElement("option"); //crea los elementos en la variable option
+        option.innerHTML = element[0]; //innerHTML imprime los elementos en el HTML
+        select.appendChild(option); //ponlos en la variable select, que es un document.getElementbyId, como hijos
+    });
+}
+showAnios(); */
+
 
 /*
 // <--------------------NUEVO ARRAY PARA PERÚ-------------------->

@@ -48,32 +48,49 @@ function showPeruEducationIndicators(){
 showPeruEducationIndicators();
  
 
- //---------------MUESTRA LOS AÑOS--------------------------
-
-function showAnios(){
-
+function TablaDatos(){
     const dataPerIndicators = WORLDBANK.PER.indicators;
     const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
-    const anioEconomicIndicator = Object.entries(dataEconomicIndicator[0].data); //el objeto lo convertimos en array 57 arreglos (1960 - 2017) de 2 entradas
-    const select = document.getElementById("anios"); //ve a los elemntos del select con id anios
- 
-    anioEconomicIndicator.forEach(function(element){
-        let option = document.createElement("option"); //crea los elementos en la variable option
-        option.innerHTML = element[0]; //innerHTML imprime los elementos en el HTML
-        select.appendChild(option); //ponlos en la variable select, que es un document.getElementbyId, como hijos
-    });
+    const yearEconomicIndicator = Object.entries(dataEconomicIndicator[2].data);//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
+    const orderData = yearEconomicIndicator.sort(function(a,b){return a[1] - b[1]});//Me acomoda los array con los valores de la posición 1 de menor a mayor
+    const reverseOrderData=orderData.reverse(); //Me ordena de mayor a menor al arreglo anterior
+    const filterData = reverseOrderData.filter(sinvac => sinvac[1] != ""); //me muestra solo los valores que tenga mi array 
+    
+    const dataTable = document.getElementById("dataTable"); //tomamos la tabla desde el HTML
+    const bodyTable = document.createElement('tbody'); //Creamos los elementos de la tabla
+
+    filterData.forEach(function(datarow){ //tomamos cada arreglo (58) de mi arreglo reverseOrderData
+    let row = document.createElement("tr"); //Creamos nuestras <tr> que serán 58 por el length de nuesro arreglo
+
+        datarow.forEach(function(dataCell){
+            let cell = document.createElement("td"); //creamos nuestro <td> que son los valores que se van a insertar en cada <tr>
+            cell.appendChild(document.createTextNode(dataCell)); //es el texto que introduciremos con el valor anterior
+            row.appendChild(cell); //cada celda va a estar puesta en nuestro <tr>
+        });
+    bodyTable.appendChild(row); 
+});
+dataTable.appendChild(bodyTable);
+document.body.appendChild(dataTable);
 }
-showAnios();
+TablaDatos();
+
 
 
     const dataPerIndicators = WORLDBANK.PER.indicators;
     const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
     const yearEconomicIndicator = Object.entries(dataEconomicIndicator[2].data);//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
-
-
     const orderData = yearEconomicIndicator.sort(function(a,b){return a[1] - b[1]});//Me acomoda los array con los valores de la posición 1 de menor a mayor
     const reverseOrderData=orderData.reverse(); //Me ordena de mayor a menor al arreglo anterior
-    console.log (reverseOrderData);
+    const filtrado = reverseOrderData.filter(sinvac => sinvac[1] != "");
+
+    const filtradodatos= filtrado.map((datos) => {
+        let suma = datos.reduce((a,b)=> a+b);
+        return suma/filtrado.length;
+    });
+
+    console.log((filtrado[0][1]+filtrado[1][1]+filtrado[2][1])/filtrado.length);
+
+
 
   
 
