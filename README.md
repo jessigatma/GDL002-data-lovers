@@ -40,32 +40,32 @@ La página es para personas de habla hispana, mayores de 15 años que buscan inf
 
 Nuestro primer prototipo consistió en ponerlo de esta manera con la idea de que los indicadores serían de varios temas. Y nuestro usuario sería un estudiante de preparatoria.
 
-[imagen1](../sketchbf/IMG_20190303_114858558.jpg)
+[imagen1](../images/IMG_20190303_114858558.jpg)
 
 Al observar el tipo de datos que teníamos en el archivo worldbank.js decidimos cambiar el usuario por gente interesada en estudios de género. 
 
-[imagen2](../sketchbf/Imagen de iOS.jpg)
+[imagen2](../images/Imagen de iOS.jpg)
 
 En la imagen anterior nos dimos cuenta que faltaba información al usuario y no cumplía con el objetivo de hacerlo sencillo para cualquier persona
 
 Por lo que decidimos hacerlo de la siguiente manera:
 Esta imagen donde el usuario observe el nombre de la página y lo que puede encontrar y si quiere conocer más.
 
-[imagen3](../sketchbf/IMG20190303_114921160.jpg)
+[imagen3](../images/IMG20190303_114921160.jpg)
 
 Nos interesa que ya que el usuario entró, se le informe sobre el significado de Brecha de género y el país por el que está interesado
 
-[imagen4](../sketchbf/IMG20190303_114926726.jpg)
+[imagen4](../images/IMG20190303_114926726.jpg)
 
 Luego que seleccione por tipo de indicador. Este "Tipo" lo hicimos pensando en que el usuario no vea miles de indicadores de brecha de género juntos, sino que pueda delimitar su búsqueda ya sea brecha de género en lo económico, en lo laboral ó en lo educativo.
 
 
-[imagen5](../sketchbf/IMG20190303_114930359.jpg)
+[imagen5](../images/IMG20190303_114930359.jpg)
 
 Finalmente, la pantalla donde ya que el usuario seleccionó el indicador de su preferencia, le aparezca el resumen de todo
 
 
-[imagen6](../sketchbf/IMG20190303_114934895.jpg)
+[imagen6](../images/IMG20190303_114934895.jpg)
 
 
 ## Diseño de la interfaz de usuario (alta fidelidad)
