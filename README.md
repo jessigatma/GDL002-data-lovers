@@ -1,8 +1,8 @@
-# Data Lovers "Creando Equidad" WorldBank Gender Studies
+# Data Lovers - "Creando Equidad" WorldBank Gender Studies
 
 ## Índice
 
-- [Definición del Producto](#definición-del-producto)
+- [Definición del Producto](#usuarios)
 - [Historias de Usuario](#historias-de-usuario)
 - [Sketch (baja fidelidad)](#prototipo-baja-fidelidad)
 - [Diseño de la interfaz de usuario (alta fidelidad)](#diseño-de-la-interfaz-de-usuario)
