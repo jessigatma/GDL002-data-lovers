@@ -28,56 +28,22 @@ La página es para personas de habla hispana, mayores de 15 años que buscan inf
 
 ## Historias de Usuario
 
+- Como usuario necesito conocer el nombre de la página con el título en la parte alta de la pantalla y centrado. También rquiero conocer lo que puedo encontrar en la página con un listón del lado derecho con la pregunta ¿Sabías qué? y una frase con estadísticas sobre brecha de género que impacte al usuario y quiera conocer más. Para conocer más el usuario necesita un botón que lo lleve a más información.
+
+- El usuario que no es especialista en temas de género, necesita saber el significado preciso de qué es Brecha de Género  y necesita escoger por medio de un botón el país del que quiera mayor información sobre este tema.
+
+- El usuario necesita ver la clasificación por tipo de la brecha de género, para que se deslicen cada uno de los indicadores y escoja uno.
+
+- El usuario necesita observar ese indicador escogido en una tabla con los años desde 1960  hasta 2017 y ver el promedio de este indicador a lo largo de esos años.
+
 ## Sketh (baja fidelidad)
+
+
 
 
 
 -------------------------------------
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
-
-Dicho en palabras sencillas, aprenderás a:
-
-- Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
-- Pensar en las **necesidades de los usuarios** para crear historias de usuario.
-- Escribir y trabajar con **historias de usuario**, sus definiciones de
-  terminado (_definition of done_) en la organización y planificación de tu
-  trabajo.
-- Definir qué data y de qué forma mostrarla en el producto, basándote en
-  tu **entendimiento del usuario**.
-- Crear productos que sigan los **principios básicos de diseño visual** y
-  las **heurísticas de usabilidad**.
-- Iterar el diseño del producto, basándote en los resultados de los
-  **tests de usabilidad**.
-- Manipular **_arreglos_ (_arrays_) y _objetos_ (_objects_)**.
-- **Manipular el DOM** (agregar elementos dinámicamente basados en la data).
-- **Manejar eventos del DOM** para permitir interacción con el usuario
-  (filtrado, ordenado, ...).
-- Entender los beneficios y complejidades de **trabajar en equipo** en un
-  ambiente de incertidumbre.
-
-## Parte Obligatoria
-
-Los criterios para considerar que has completado este proyecto son:
-
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
-
-### Historias de usuario
-
-Una vez que entiendas las necesidades de tu usuario, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
-de terminado (_definition of done_) para cada una.
-
-### Diseño de la Interfaz de Usuario
-
-#### Prototipo de baja fidelidad
 
 Durante tu trabajo deberás haber hecho e iterado sketches (boceto) de tu
 solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
