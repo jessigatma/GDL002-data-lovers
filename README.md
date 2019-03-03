@@ -40,7 +40,7 @@ La página es para personas de habla hispana, mayores de 15 años que buscan inf
 
 Nuestro primer prototipo consistió en ponerlo de esta manera con la idea de que los indicadores serían de varios temas. Y nuestro usuario sería un estudiante de preparatoria.
 
-![imagen1](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/test/images/IMG_20190303_114858558.jpg)
+![imagen1](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/blob/master/images/IMG_20190303_114858558.jpg)
 
 Al observar el tipo de datos que teníamos en el archivo worldbank.js decidimos cambiar el usuario por gente interesada en estudios de género. 
 
@@ -58,7 +58,6 @@ Nos interesa que ya que el usuario entró, se le informe sobre el significado de
 ![imagen4](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/images/IMG20190303_114926726.jpg)
 
 Luego que seleccione por tipo de indicador. Este "Tipo" lo hicimos pensando en que el usuario no vea miles de indicadores de brecha de género juntos, sino que pueda delimitar su búsqueda ya sea brecha de género en lo económico, en lo laboral ó en lo educativo.
-
 
 ![imagen5](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/images/IMG20190303_114930359.jpg)
 
