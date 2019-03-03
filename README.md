@@ -40,18 +40,18 @@ La página es para personas de habla hispana, mayores de 15 años que buscan inf
 
 Nuestro primer prototipo consistió en ponerlo de esta manera con la idea de que los indicadores serían de varios temas. Y nuestro usuario sería un estudiante de preparatoria.
 
-![imagen1](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/images/IMG_20190303_114858558.jpg)
+![imagen1](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/test/images/IMG_20190303_114858558.jpg)
 
 Al observar el tipo de datos que teníamos en el archivo worldbank.js decidimos cambiar el usuario por gente interesada en estudios de género. 
 
-![imagen2](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/images/sketchkar.png)
+![imagen2](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/test/images/sketchkar.png)
 
 En la imagen anterior nos dimos cuenta que faltaba información al usuario y no cumplía con el objetivo de hacerlo sencillo para cualquier persona
 
 Por lo que decidimos hacerlo de la siguiente manera:
 Esta imagen donde el usuario observe el nombre de la página y lo que puede encontrar y si quiere conocer más.
 
-![imagen3](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/images/IMG20190303_114921160.jpg)
+![imagen3](https://raw.githubusercontent.com/jessigatma/GDL002-data-lovers/test/images/IMG20190303_114921160.jpg)
 
 Nos interesa que ya que el usuario entró, se le informe sobre el significado de Brecha de género y el país por el que está interesado
 
