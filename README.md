@@ -2,11 +2,10 @@
 
 ## Índice
 
-- [Definición del Producto](#Definición)
+- [Definición del Producto](#definición-del-producto)
 - [Historias de Usuario](#resumen-del-proyecto)
 - [Sketch (baja fidelidad)](#consideraciones-generales)
-- [Diseño de la interfaz de usuario (alta fidelidad)](#objetivos-de-aprendizaje)
-
+- [Diseño de la interfaz de usuario (alta fidelidad)](#diseño-de-la-interfaz-de-usuario)
 ---
 
 ## Definición del Producto
