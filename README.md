@@ -2,9 +2,9 @@
 
 ## Índice
 
-- [Definición del Producto](#usuarios)
+- [Definición del Producto](#definición-del-producto)
 - [Historias de Usuario](#historias-de-usuario)
-- [Sketch (baja fidelidad)](#prototipo-baja-fidelidad)
+- [Sketch (baja fidelidad)](#sketch)
 - [Diseño de la interfaz de usuario (alta fidelidad)](#diseño-de-la-interfaz-de-usuario)
 ---
 
