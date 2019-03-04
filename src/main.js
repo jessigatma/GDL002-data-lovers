@@ -100,6 +100,9 @@ TablaDatos();
  const sumaorder = yearEconomicIndicator1.filter(element => element != "");
  const suma = sumaorder.reduce((a,b)=>a+b);
  const promedio = suma/sumaorder.length
+ 
+  document.getElementById("promedio").innerHTML= promedio.toFixed(2);
+
  console.log (promedio); 
 
 
