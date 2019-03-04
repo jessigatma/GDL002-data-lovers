@@ -1,20 +1,35 @@
+function showPeruData(){
+
+    const dataPerIndicators=WORLDBANK.PER.indicators;
+    const economicIndicators = dataPerIndicators.filter(economicIndicator => economicIndicator.indicatorCode.includes("IC."));
+    const select = document.getElementById("peruEconomicIndicators");
+
+    economicIndicators.forEach(function(element){
+        let option = document.createElementById("option");
+        option.innerHTML = element.indicatorName;
+        select.appendChild(option);
+    });
+}
+document.getElementById("peru_button").addEventListener("click",showPeruData,true);
+
 //-------------FILTRA LOS INDICADORES POR TIPO -----------
 //IC ES EL TIPO ECONÓMICO
 //SL ES LA FUERZA LABORAL
 //SE EDUCATIVO
+ 
 
 function showPeruEconomicIndicators(){
     
-     const dataPerIndicators=WORLDBANK.PER.indicators;
-     const economicIndicators = dataPerIndicators.filter(economicIndicator => economicIndicator.indicatorCode.includes("IC."));
-     const select= document.getElementById("peruEconomicIndicators");
+    const dataPerIndicators=WORLDBANK.PER.indicators;
+    const economicIndicators = dataPerIndicators.filter(economicIndicator => economicIndicator.indicatorCode.includes("IC."));
+    const select= document.getElementById("peruEconomicIndicators");
 
-     economicIndicators.forEach(function(element){
-         let option = document.createElement("option");
-         option.innerHTML= element.indicatorName;
-         select.appendChild(option);
-     });
- }
+    economicIndicators.forEach(function(element){
+        let option = document.createElement("option");
+        option.innerHTML= element.indicatorName;
+        select.appendChild(option);
+    });
+}
 showPeruEconomicIndicators();
 
 
@@ -46,12 +61,11 @@ function showPeruEducationIndicators(){
     });
 }
 showPeruEducationIndicators();
- 
 
 function TablaDatos(){
     const dataPerIndicators = WORLDBANK.PER.indicators;
     const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
-    const yearEconomicIndicator = Object.entries(dataEconomicIndicator[2].data);//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
+    const yearEconomicIndicator = Object.entries(dataEconomicIndicator[4].data);//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
     const orderData = yearEconomicIndicator.sort(function(a,b){return a[1] - b[1]});//Me acomoda los array con los valores de la posición 1 de menor a mayor
     const reverseOrderData=orderData.reverse(); //Me ordena de mayor a menor al arreglo anterior
     const filterData = reverseOrderData.filter(sinvac => sinvac[1] != ""); //me muestra solo los valores que tenga mi array 

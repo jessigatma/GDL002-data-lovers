@@ -6,41 +6,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="secondScreen">
 
     <p><b> Selecciona el país</b></p>
 
-    <button id=peru_button onclick="alert('No soy Brasil')">Perú</button>
+    <button id="peru_button">Perú</button>
 
-    <button id=brasil_button>Brasil</button>
+    <button id="brasil_button">Brasil</button>
 
-    <button id=mexico_button>México</button>
+    <button id="mexico_button">México</button>
     
-    <button id=chile_button>Chile</button>
+    <button id="chile_button">Chile</button>
+  </div>
 
   <div id="thirdScreen">
 
      <p> Selecciona un tipo de indicador </p>
 
-    <button id=economicButton>Económico</button>
 
-       <select id="peruEconomicIndicators"></select>
 
-    <button id=laboralButton>Fuerza Laboral</button>
+       <select id="peruEconomicIndicators">
+            <option value="default">Económico</option>
+       </select>
     
-       <select id="peruLaboralIndicators"></select>
+       <select id="peruLaboralIndicators">
+            <option value="default">Fuerza Laboral</option>
+       </select>
 
-    <button id=educativeButton>Educativo</button>
-
-       <select id="peruEducativeIndicators"></select>
- 
+       <select id="peruEducativeIndicators">
+            <option value="default">Educativo</option>
+       </select>
   </div>
-
-  <table id="dataTable">
-    <th>Año</th>
-    <th>(%)</th>
-  </table>
-
+ <br>
+  <div id= "fourthScreen">
+    <table id="dataTable">
+      <th>Año</th>
+      <th>(%)</th>
+    </table>
+  </div> 
 
 
 
