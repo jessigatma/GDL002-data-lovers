@@ -100,6 +100,7 @@ TablaDatos();
  const suma = sumaorder.reduce((a,b)=>a+b);
  const promedio = suma/sumaorder.length
   
+document.getElementById("promedio").innerHTML = promedio.toFixed(2);
 
 
 
