@@ -99,7 +99,7 @@ TablaDatos();
  const sumaorder = yearEconomicIndicator1.filter(element => element != "");
  const suma = sumaorder.reduce((a,b)=>a+b);
  const promedio = suma/sumaorder.length
- console.log (promedio); 
+  
 
 
 
