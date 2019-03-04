@@ -1,12 +1,12 @@
-require('../src/data.js');
+require('../src/main.js');
+require('../src/data/worldbank/worldbank.json');
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+//Calcular 
+
+describe('promedio', () => {
+  it('is a math function', () => {
+    expect(typeof promedio).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+}); 
