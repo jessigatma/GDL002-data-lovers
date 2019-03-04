@@ -69,7 +69,12 @@ Finalmente, la pantalla donde ya que el usuario seleccionó el indicador de su p
 
 ## Diseño de la interfaz de usuario en alta fidelidad
 
+Aunque aún no contamos con el prototipo de alta fidelidad. Esta es una muestra de cómo se ve nuestro proyecto en móviles
 
+![imagen7](https://github.com/jessigatma/GDL002-data-lovers/blob/master/images/Screenshot_20190303-181449-01.jpg)
+![imagen8](https://github.com/jessigatma/GDL002-data-lovers/blob/master/images/Screenshot_20190303-181454-01.jpg)
+![imagen9](https://github.com/jessigatma/GDL002-data-lovers/blob/master/images/Screenshot_20190303-181503-01.jpg)
+![imagen10](https://github.com/jessigatma/GDL002-data-lovers/blob/master/images/Screenshot_20190303-181508-01.jpg)
 
 ### Resultados
 
