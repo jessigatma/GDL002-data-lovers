@@ -62,6 +62,8 @@ function showPeruEducationIndicators(){
 }
 showPeruEducationIndicators();
 
+//-------------------------MUESTRA DATOS ORDENADOS DE MAYOR A MENOR--------------------
+
 function TablaDatos(){
     const dataPerIndicators = WORLDBANK.PER.indicators;
     const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
@@ -90,24 +92,18 @@ TablaDatos();
 
 
 
-    const dataPerIndicators = WORLDBANK.PER.indicators;
-    const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
-    const yearEconomicIndicator = Object.entries(dataEconomicIndicator[2].data);//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
-    const orderData = yearEconomicIndicator.sort(function(a,b){return a[1] - b[1]});//Me acomoda los array con los valores de la posición 1 de menor a mayor
-    const reverseOrderData=orderData.reverse(); //Me ordena de mayor a menor al arreglo anterior
-    const filtrado = reverseOrderData.filter(sinvac => sinvac[1] != "");
-
-    const filtradodatos= filtrado.map((datos) => {
-        let suma = datos.reduce((a,b)=> a+b);
-        return suma/filtrado.length;
-    });
-
-    console.log((filtrado[0][1]+filtrado[1][1]+filtrado[2][1])/filtrado.length);
+    
+//-------------------OBTENER PROMEDIO-----------------------
+    
+ const yearEconomicIndicator1 = Object.values(dataEconomicIndicator[2].data);
+ const sumaorder = yearEconomicIndicator1.filter(element => element != "");
+ const suma = sumaorder.reduce((a,b)=>a+b);
+ const promedio = suma/sumaorder.length
+ console.log (promedio); 
 
 
 
   
 
-//const pegamos= WORLDBANK.BRA.indicators.map(({indicatorCode,indicatorName,}) => [`${indicatorCode}, ${indicatorName}`]);
-//console.log(pegamos);
+
 
