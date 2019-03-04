@@ -1,3 +1,110 @@
-table, td, tr, th{
-    border: 1px solid black;
+/*BOX-SIZING MODEL TO BORDER*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  padding: 0 0rem 5rem 0rem;
+  margin: 0;
+}
+
+html{
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  margin: auto;;
+}
+
+select {
+  max-width: 250px;
+  display: block;
+  margin: 1rem auto;
+}
+
+/*table, */td, tr, th{
+  border: 1px solid #7a8eb9;
+  padding: 1rem;
+}
+
+.country-button {
+  -moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+  box-shadow:inset 0px 1px 0px 0px #7ab0b9;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+  background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+  background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+  background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+  background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
+  background:linear-gradient(to bottom, #00dbff 5%, #1394aa 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
+  background-color:#9c9c9c;
+  border:none;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:12px 24px;
+  text-decoration:none;
+  margin: .5rem;
+  min-width: 110px;     
+}
+
+h1{
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 2.5rem;
+  margin: 3rem auto;
+  text-transform: uppercase;
+  background-color: #000000b0;
+  max-width: 50%
+}
+
+h2{
+  color: #9c0808;
+  font-weight: 400;
+  font-size: 1.65rem;
+}
+
+.screen{
+  padding: 3rem;
+}
+
+.title-background {
+background-image: url('https://claudiagarfias.works/laboratoria/sharedimages/mujeres-charlando.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 150px; 
+padding: 2rem;
+}
+@media only screen and (max-width: 1200px) {
+
+  h1{
+  font-size: 1.85rem;
+  margin: auto;
+  max-width: 95%
   }
+
+  h2 {
+  font-weight: 300;
+  font-size: 1.25rem;
+  }
+
+  .screen{
+  padding: -05rem;
+  }
+
+  select{
+  max-width: 80%;
+  display: block;
+  margin: 1rem auto;
+  }
+}
