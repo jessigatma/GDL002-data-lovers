@@ -94,7 +94,8 @@ TablaDatos();
 
     
 //-------------------OBTENER PROMEDIO-----------------------
-    
+ const dataPerIndicators = WORLDBANK.PER.indicators;
+ const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
  const yearEconomicIndicator1 = Object.values(dataEconomicIndicator[2].data);
  const sumaorder = yearEconomicIndicator1.filter(element => element != "");
  const suma = sumaorder.reduce((a,b)=>a+b);
