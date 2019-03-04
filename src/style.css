@@ -102,8 +102,9 @@ padding: 2rem;
   padding: -05rem;
   }
 
-  select {
+  select{
   max-width: 80%;
   display: block;
   margin: 1rem auto;
   }
+}
