@@ -1,24 +1,16 @@
-function showPeruData(){
 
-    const dataPerIndicators=WORLDBANK.PER.indicators;
-    const economicIndicators = dataPerIndicators.filter(economicIndicator => economicIndicator.indicatorCode.includes("IC."));
-    const select = document.getElementById("peruEconomicIndicators");
+//Quiero que el botón llame a la función del país que dio click
+//quiero que me despliegue los distintos indicadores 
 
-    economicIndicators.forEach(function(element){
-        let option = document.createElementById("option");
-        option.innerHTML = element.indicatorName;
-        select.appendChild(option);
-    });
-}
-document.getElementById("peru_button").addEventListener("click",showPeruData,true);
+//dentro del parentesis mi condicion PER
+//antes, llama al boton
 
 //-------------FILTRA LOS INDICADORES POR TIPO -----------
 //IC ES EL TIPO ECONÓMICO
 //SL ES LA FUERZA LABORAL
 //SE EDUCATIVO
- 
-
-function showPeruEconomicIndicators(){
+/*
+function showPeruEconomicIndicators(){ //el país seleccionado y el tipo de indicador que busca el usuario
     
     const dataPerIndicators=WORLDBANK.PER.indicators;
     const economicIndicators = dataPerIndicators.filter(economicIndicator => economicIndicator.indicatorCode.includes("IC."));
@@ -33,7 +25,7 @@ function showPeruEconomicIndicators(){
 showPeruEconomicIndicators();
 
 
-function showPeruLaboralIndicators(){
+function showPeruLaboralIndicators(country, indicatortype){
 
      const dataPerIndicators=WORLDBANK.PER.indicators;
      const laboralIndicators = dataPerIndicators.filter(laboralIndicator => laboralIndicator.indicatorCode.includes("SL."));
@@ -48,7 +40,7 @@ function showPeruLaboralIndicators(){
 showPeruLaboralIndicators();
 
 
-function showPeruEducationIndicators(){
+function showPeruEducationIndicators(country, indicatortype){
 
     const dataPerIndicators=WORLDBANK.PER.indicators;
     const educativeIndicators = dataPerIndicators.filter(educativeIndicator => educativeIndicator.indicatorCode.includes("SE."));
@@ -61,13 +53,13 @@ function showPeruEducationIndicators(){
     });
 }
 showPeruEducationIndicators();
-
+*/
 //-------------------------MUESTRA DATOS ORDENADOS DE MAYOR A MENOR--------------------
-
+/*
 function TablaDatos(){
     const dataPerIndicators = WORLDBANK.PER.indicators;
     const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
-    const yearEconomicIndicator = Object.entries(dataEconomicIndicator[4].data);//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
+    const yearEconomicIndicator = Object.entries(dataEconomicIndicator[4].data);//REEVISAR AQUI PARA HACER LA FUNCION GENERAL//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
     const orderData = yearEconomicIndicator.sort(function(a,b){return a[1] - b[1]});//Me acomoda los array con los valores de la posición 1 de menor a mayor
     const reverseOrderData=orderData.reverse(); //Me ordena de mayor a menor al arreglo anterior
     const filterData = reverseOrderData.filter(sinvac => sinvac[1] != ""); //me muestra solo los valores que tenga mi array 
@@ -89,7 +81,7 @@ dataTable.appendChild(bodyTable);
 document.body.appendChild(dataTable);
 }
 TablaDatos();
-
+*/
 
 
     
@@ -97,15 +89,15 @@ TablaDatos();
  const dataPerIndicators = WORLDBANK.PER.indicators;
  const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
  const yearEconomicIndicator1 = Object.values(dataEconomicIndicator[2].data);
- const sumaorder = yearEconomicIndicator1.filter(element => element != "");
- const suma = sumaorder.reduce((a,b)=>a+b);
+  const sumaorder = yearEconomicIndicator1.filter(element => element != ""); //Quita los años donde no haya dato
+  const suma = sumaorder.reduce((a,b)=>a+b);
+ 
  const promedio = suma/sumaorder.length;
   
 document.getElementById("promedio").innerHTML = promedio.toFixed(2);
 
 
 
-  
 
 
 

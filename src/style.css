@@ -1,5 +1,5 @@
 /*BOX-SIZING MODEL TO BORDER*/
-*, *:before, *:after {
+ *, *:before, *:after {
   -webkit-box-sizing: border-box; 
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
@@ -13,6 +13,8 @@ body {
 }
 
 html{
+  background-color: rgb(187, 205, 226);
+  background-image: url()
   padding: 0;
   margin: 0;
 }
@@ -27,7 +29,7 @@ select {
   margin: 1rem auto;
 }
 
-/*table, */td, tr, th{
+/*table, */ td, tr, th{
   border: 1px solid #7a8eb9;
   padding: 1rem;
 }
@@ -107,4 +109,4 @@ padding: 2rem;
   display: block;
   margin: 1rem auto;
   }
-}
+} 
