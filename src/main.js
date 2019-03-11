@@ -1,3 +1,38 @@
+//-----PRIMERA PANTALLA mostrar frase random------
+
+let Frase = new Array() 
+Frase[0] = "A pesar de haber más mujeres con estudios superiores, el desempleo suele afectar más a este colectivo.";
+Frase[1] = "En política y puestos parlamentarios, las mujeres sólo representan un 20%.";
+Frase[2] = "Sólo un 20% de los puestos directivos están ocupados por mujeres y menos del 5% son CEO de una empresa.";
+Frase[3] = "El porcentaje de mujeres que aparece en las noticias es menor que el porcentaje de hombres. Además, el 46% de noticias en las que sale refuerza los estereotipos de género establecidos.";
+Frase[4] = "530 millones de mujeres adultas en el mundo son analfabetas, frente a 266 millones de hombres.";
+Frase[5] = "El 80% del trabajo no remunerado lo realizan mujeres: cuidados a enfermos, tareas domésticas, voluntariado… Lo que hace que haya más mujeres que hombres en riesgo de caer en la pobreza.";
+ 
+let F = Frase.length;
+let aleatorio=Math.round(Math.random()*(F-1));
+function fraseAleatoria(){
+    document.getElementById('RandomPhrase').innerHTML = (Frase[aleatorio]);
+}fraseAleatoria();
+
+function ConoceMas(){
+    const firstScreen = document.getElementById("firstScreen");
+    const secondScreen = document.getElementById("secondScreen");
+    const thirdScreen = document.getElementById("thirdScreen");
+    const fourthScreen = document.getElementById("fourthScreen");
+    
+       firstScreen.style.display = "none";
+       secondScreen.style.display = "block"; //me muestra la segunda pantalla
+       thirdScreen.style.display = "none";
+       fourthScreen.style.display = "none";
+}
+document.getElementById("knowMore").addEventListener("click",ConoceMas,false);
+
+//-----SEGUNDA PANTALLA---
+
+
+
+
+
 
 //Quiero que el botón llame a la función del país que dio click
 //quiero que me despliegue los distintos indicadores 

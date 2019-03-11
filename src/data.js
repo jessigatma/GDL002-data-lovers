@@ -42,9 +42,17 @@ function PERU(){
     typeSelectedValue = event.target.value;//me da el número de posición de los datos desplegados (la posición de array -1)
     console.log(typeSelectedValue);
   });
-
+  const firstScreen = document.getElementById("firstScreen");
+    const secondScreen = document.getElementById("secondScreen");
+    const thirdScreen = document.getElementById("thirdScreen");
+    const fourthScreen = document.getElementById("fourthScreen");
+    
+       firstScreen.style.display = "none";
+       secondScreen.style.display = "block"; //me muestra la segunda pantalla
+       thirdScreen.style.display = "block"; //me muestra la tercer pantalla
+       fourthScreen.style.display = "none"
 }
-document.getElementById("PERU").addEventListener("click",PERU); 
+document.getElementById("PERU").addEventListener("click",PERU);
 
 
 function BRASIL(){

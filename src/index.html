@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Data Lovers: Creando equidad</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200.300,400,500,600" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  
   </head>
   <body>
-    <div class="title-background">
-     <h1>Creando equidad</h1>
+    
+    <div id="firstScreen" class="title-background">
+        <h1><img src="https://i.ibb.co/SvnbLzg/CREANDOEQUIDADTITULO.png" id="CREANDOEQUIDADTITULO"></h1>
+          <span><img src="https://i.ibb.co/RpJJQjh/15191-Convertido-04alreves.png" id="SABIASQUE"> </span>
+    
+    
+      <div class="container">
+        <img src="https://i.ibb.co/hDWSn0c/cuadrodetexto.png">
+        <div id="RandomPhrase" class="textoencima"></div> 
+      </div>
+
+        <button id ="knowMore" class="button-knowMore">CONOCE MÁS</button>
+
     </div>
 
-        <div id="secondScreen" class="screen">
 
-        <h2>Selecciona el país</h2>
+
+    <div id="secondScreen" class="screen">
+
+        <h2><img src="https://i.ibb.co/ySd4xtC/37-03.png" id="listonbrecha"></h2>
+
+        <article>Es la diferencia entre las proporciones masculina y femenina de un determinado indicador.
+          Destaca las desigualdades existentes entre hombres y mujeres en cualquier ámbito, 
+          en relación con el nivel de participación, acceso a oportunidades, derechos, poder e influencia, 
+          remuneración y beneficios, control y uso de los recursos, que les permiten garantizar su 
+          bienestar y desarrollo humano. </article>
+
+        <h3>en Latinoamérica*</h3>
+        
 
         <button id="PERU" class="country-button">Perú</button>
 
@@ -23,39 +49,55 @@
         <button id="MEXICO" class="country-button">México</button>
         
         <button id="CHILE" class="country-button">Chile</button>
-        </div>
+        
+        <br><br>
+        <span>*países donde se encuentra Laboratoria</span>
+       
+    </div>
 
 
 
   <div id="thirdScreen" class="screen">
 
-     <h2>Selecciona un tipo de indicador de Brecha de Género</h2>
+    <h4>Selecciona un tipo de indicador de Brecha de Género</h4>
 
+     <div class="dropdown">
+        <img src="https://i.ibb.co/zVnpcRw/indicadorfuerza.png" class="indicator-image">
+           <select id="laboralIndicators" class="dropdown-content">
+               <!-- <option value="default">Fuerza Laboral</option> -->
+           </select>
+      </div>
 
+      <div class="dropdown">
+          <img src="https://i.ibb.co/L6cG1c9/indicadoreconomico.png" class="indicator-image">
+             <select id="economicIndicators" class="dropdown-content">
+                 <!-- <option value="default">Economico</option> -->
+             </select>
+      </div>
 
-       <select id="economicIndicators">
-            <option value="default">Económico</option>
-       </select>
-    
-       <select id="laboralIndicators">
-            <option value="default">Fuerza Laboral</option>
-       </select>
+      <div class="dropdown">
+          <img src="https://i.ibb.co/vB6R7p8/indicadoreducacion.png" class="indicator-image">
+             <select id="educativeIndicators" class="dropdown-content">
+                 <!-- <option value="default">Educativo</option> -->
+             </select>
+      </div>
 
-       <select id="educativeIndicators">
-            <option value="default">Educativo</option>
-       </select>
   </div>
   
  <br>
   <div id= "fourthScreen">
+    
     <table id="dataTable">
       <th>Año</th>
       <th>(%)</th>
     </table>
-  </div> 
 
-El promedio del indicador a lo largo de estos años es:
-<label id="promedio"> </label> % 
+    El promedio del indicador a lo largo de estos años es:
+      <label id="promedio"> </label> % 
+  
+    </div> 
+
+
 
 
   <script src="./data/worldbank/worldbank.js"></script>
