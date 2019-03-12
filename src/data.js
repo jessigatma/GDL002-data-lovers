@@ -24,59 +24,37 @@ const example = () => {
 
 window.example = example; */
 
-
-
 //-------------FUNCIONES PARA LOS BOTONES DE LOS DISTINTOS PAISES----------------------
+function COUNTRY(pais){
 
-function PERU(){
- 
-  showEconomicIndicators(WORLDBANK.PER.indicators);
-  showLaboralIndicators(WORLDBANK.PER.indicators);
-  showEducationIndicators(WORLDBANK.PER.indicators);
+  showEconomicIndicators(WORLDBANK[pais].indicators);
+  showLaboralIndicators(WORLDBANK[pais].indicators);
+  showEducationIndicators(WORLDBANK[pais].indicators);
+  
   addEventListener("change",function(event){ //me guarda el indicador que el usuario seleccionó
-    typeSelected = event.target.selectedIndex;//me da el número de posición de los datos desplegados (la posición de array -1)
-    console.log(typeSelected); 
-  });
-   
-  addEventListener("change",function(event){ //me guarda el indicador que el usuario seleccionó
+    typeSelectedIndex = event.target.selectedIndex;
     typeSelectedValue = event.target.value;//me da el número de posición de los datos desplegados (la posición de array -1)
-    console.log(typeSelectedValue);
+    generalTable(typeSelectedIndex,typeSelectedValue,pais);
   });
+
   const firstScreen = document.getElementById("firstScreen");
-    const secondScreen = document.getElementById("secondScreen");
-    const thirdScreen = document.getElementById("thirdScreen");
-    const fourthScreen = document.getElementById("fourthScreen");
+  const secondScreen = document.getElementById("secondScreen");
+  const thirdScreen = document.getElementById("thirdScreen");
+  const fourthScreen = document.getElementById("fourthScreen");
     
-       firstScreen.style.display = "none";
-       secondScreen.style.display = "block"; //me muestra la segunda pantalla
-       thirdScreen.style.display = "block"; //me muestra la tercer pantalla
-       fourthScreen.style.display = "none"
+    firstScreen.style.display = "none";
+    secondScreen.style.display = "block"; //me muestra la segunda pantalla
+    thirdScreen.style.display = "block"; //me muestra la tercer pantalla
+    fourthScreen.style.display = "none"
 }
-document.getElementById("PERU").addEventListener("click",PERU);
+document.getElementById("PERU").addEventListener("click",()=>(COUNTRY('PER')));
+document.getElementById("BRASIL").addEventListener("click",()=>(COUNTRY('BRA')));
+document.getElementById("MEXICO").addEventListener("click",()=>(COUNTRY('MEX')));
+document.getElementById("CHILE").addEventListener("click",()=>(COUNTRY('CHL')));
 
-
-function BRASIL(){
-  showEconomicIndicators(WORLDBANK.BRA.indicators);
-  showLaboralIndicators(WORLDBANK.BRA.indicators);
-  showEducationIndicators(WORLDBANK.BRA.indicators);
-}
-document.getElementById("BRASIL").addEventListener("click",BRASIL);
-
-function MEXICO(){
-  showEconomicIndicators(WORLDBANK.MEX.indicators);
-  showLaboralIndicators(WORLDBANK.MEX.indicators);
-  showEducationIndicators(WORLDBANK.MEX.indicators);
-}
-document.getElementById("MEXICO").addEventListener("click",MEXICO);
-
-function CHILE(){
-  showEconomicIndicators(WORLDBANK.CHL.indicators);
-  showLaboralIndicators(WORLDBANK.CHL.indicators);
-  showEducationIndicators(WORLDBANK.CHL.indicators);
-}
-document.getElementById("CHILE").addEventListener("click",CHILE);
 
 //----------------- FUNCIONES PARA MOSTRAR LOS DISTINTOS TIPOS DE INDICADOR---------------------
+
 
 function showEconomicIndicators(data){
   
@@ -118,14 +96,24 @@ function showEducationIndicators(data){
 
 //-----------FUNCIONES PARA MOSTRAR LA TABLA DE DATOS-------------------7
 
-function dataTable(){
-  const dataPerIndicators = WORLDBANK.PER.indicators;
-  const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
-  const yearEconomicIndicator = Object.entries(dataEconomicIndicator[4].data);//REEVISAR AQUI PARA HACER LA FUNCION GENERAL//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
-  const orderData = yearEconomicIndicator.sort(function(a,b){return a[1] - b[1]});//Me acomoda los array con los valores de la posición 1 de menor a mayor
+function generalTable(typeSelectedIndex,typeSelectedValue, pais){
+  
+  document.getElementById("indicatorName").innerHTML = typeSelectedValue; //el valor dado al rango, lo arroja en el HTML
+
+  const dataIndicators = WORLDBANK[pais].indicators;
+  const dataEconomicIndicator= dataIndicators.filter(indicator => indicator.indicatorCode.includes("SL."));
+  const yearEconomicIndicator = Object.entries(dataEconomicIndicator[typeSelectedIndex].data);//REEVISAR AQUI PARA HACER LA FUNCION GENERAL//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
+  const orderData = yearEconomicIndicator.sort(function(a,b){return a[0] - b[0]});//Me acomoda los array con los valores de la posición 1 de menor a mayor
   const reverseOrderData=orderData.reverse(); //Me ordena de mayor a menor al arreglo anterior
   const filterData = reverseOrderData.filter(sinvac => sinvac[1] != ""); //me muestra solo los valores que tenga mi array 
+  //----------------------------------DATOS PARA PROMEDIO--------
+  const yearEconomicIndicator1 = Object.values(dataEconomicIndicator[typeSelectedIndex].data);
+  const sumaorder = yearEconomicIndicator1.filter(element => element != ""); //Quita los años donde no haya dato
+  const suma = sumaorder.reduce((a,b)=>a+b);
+  const promedio = suma/sumaorder.length;
   
+  document.getElementById("average").innerHTML = promedio.toFixed(2);
+  //--------------------------------------------------------------
   const dataTable = document.getElementById("dataTable"); //tomamos la tabla desde el HTML
   const bodyTable = document.createElement('tbody'); //Creamos los elementos de la tabla
 
@@ -141,5 +129,17 @@ function dataTable(){
 });
 dataTable.appendChild(bodyTable);
 document.body.appendChild(dataTable);
+
+  const firstScreen = document.getElementById("firstScreen");
+  const secondScreen = document.getElementById("secondScreen");
+  const thirdScreen = document.getElementById("thirdScreen");
+  const fourthScreen = document.getElementById("fourthScreen");
+    
+    firstScreen.style.display = "none";
+    secondScreen.style.display = "block"; //me muestra la segunda pantalla
+    thirdScreen.style.display = "block"; //me muestra la tercer pantalla
+    fourthScreen.style.display = "block";
+
 }
-dataTable();
+generalTable();
+

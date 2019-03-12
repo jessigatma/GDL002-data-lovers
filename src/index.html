@@ -55,14 +55,14 @@
        
     </div>
 
-
+    
 
   <div id="thirdScreen" class="screen">
 
     <h4>Selecciona un tipo de indicador de Brecha de Género</h4>
 
      <div class="dropdown">
-        <img src="https://i.ibb.co/zVnpcRw/indicadorfuerza.png" class="indicator-image">
+        <img src="https://i.ibb.co/ZLLNc3V/indicadorfuerza.png" class="indicator-image">
            <select id="laboralIndicators" class="dropdown-content">
                <!-- <option value="default">Fuerza Laboral</option> -->
            </select>
@@ -87,25 +87,33 @@
  <br>
   <div id= "fourthScreen">
     
-    <table id="dataTable">
-      <th>Año</th>
-      <th>(%)</th>
-    </table>
+    <p> Los datos del indicador:
+      <label id="indicatorName"></label> son:
+    </p>  
+    <br>
 
+      <table id="dataTable">
+        <th>Año</th>
+        <th>(%)</th>
+      </table>
+
+    <br>
+    <p>  
     El promedio del indicador a lo largo de estos años es:
-      <label id="promedio"> </label> % 
+      <label id="average"> </label> % 
+    </p>
   
-    </div> 
-
-
-
+    
+    
+  </div> 
 
   <script src="./data/worldbank/worldbank.js"></script>
   <script src="arrays.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
-    
-    
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="chart_div"></div>
+  
   </body>
 </html>
 

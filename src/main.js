@@ -11,7 +11,7 @@ Frase[5] = "El 80% del trabajo no remunerado lo realizan mujeres: cuidados a enf
 let F = Frase.length;
 let aleatorio=Math.round(Math.random()*(F-1));
 function fraseAleatoria(){
-    document.getElementById('RandomPhrase').innerHTML = (Frase[aleatorio]);
+    document.getElementById("RandomPhrase").innerHTML = (Frase[aleatorio]);
 }fraseAleatoria();
 
 function ConoceMas(){
@@ -30,106 +30,65 @@ document.getElementById("knowMore").addEventListener("click",ConoceMas,false);
 //-----SEGUNDA PANTALLA---
 
 
+//------GRAFICAS---
+
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawDualY);
+
+function drawDualY() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('year', 'Year');
+      data.addColumn('porcentaje', 'Indicador');
+      //data.addColumn('number', 'Energy Level');
+
+      data.addRows([
+        [{v: [8, 0, 0], f: '8 am'}, 1, .25],
+        [{v: [9, 0, 0], f: '9 am'}, 2, .5],
+        [{v: [10, 0, 0], f:'10 am'}, 3, 1],
+        [{v: [11, 0, 0], f: '11 am'}, 4, 2.25],
+        [{v: [12, 0, 0], f: '12 pm'}, 5, 2.25],
+        [{v: [13, 0, 0], f: '1 pm'}, 6, 3],
+        [{v: [14, 0, 0], f: '2 pm'}, 7, 4],
+        [{v: [15, 0, 0], f: '3 pm'}, 8, 5.25],
+        [{v: [16, 0, 0], f: '4 pm'}, 9, 7.5],
+        [{v: [17, 0, 0], f: '5 pm'}, 10, 10],
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Indicadores de Brecha de Género',
+          subtitle: 'Porcentaje'
+        },
+        series: {
+          0: {axis: 'Tipo de indicador'},
+          //1: {axis: 'EnergyLevel'}
+        },
+        axes: {
+          y: {
+            IndicatorType: {label: 'Tipo de indicador (%)'},
+            //EnergyLevel: {label: 'Energy Level (1-100)'}
+          }
+        },
+        hAxis: {
+          title: 'Años',
+          format: 'a',
+          viewWindow: {
+            min: [1960],
+            max: [2017]
+          }
+        },
+        vAxis: {
+          title: ''
+        }
+      };
+
+      var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
+      materialChart.draw(data, options);
+    }
 
 
 
 
-//Quiero que el botón llame a la función del país que dio click
-//quiero que me despliegue los distintos indicadores 
-
-//dentro del parentesis mi condicion PER
-//antes, llama al boton
-
-//-------------FILTRA LOS INDICADORES POR TIPO -----------
-//IC ES EL TIPO ECONÓMICO
-//SL ES LA FUERZA LABORAL
-//SE EDUCATIVO
-/*
-function showPeruEconomicIndicators(){ //el país seleccionado y el tipo de indicador que busca el usuario
-    
-    const dataPerIndicators=WORLDBANK.PER.indicators;
-    const economicIndicators = dataPerIndicators.filter(economicIndicator => economicIndicator.indicatorCode.includes("IC."));
-    const select= document.getElementById("peruEconomicIndicators");
-
-    economicIndicators.forEach(function(element){
-        let option = document.createElement("option");
-        option.innerHTML= element.indicatorName;
-        select.appendChild(option);
-    });
-}
-showPeruEconomicIndicators();
-
-
-function showPeruLaboralIndicators(country, indicatortype){
-
-     const dataPerIndicators=WORLDBANK.PER.indicators;
-     const laboralIndicators = dataPerIndicators.filter(laboralIndicator => laboralIndicator.indicatorCode.includes("SL."));
-     const select= document.getElementById("peruLaboralIndicators");
-
-     laboralIndicators.forEach(function(element){
-         let option = document.createElement("option");
-         option.innerHTML= element.indicatorName;
-         select.appendChild(option);
-     });
- }
-showPeruLaboralIndicators();
-
-
-function showPeruEducationIndicators(country, indicatortype){
-
-    const dataPerIndicators=WORLDBANK.PER.indicators;
-    const educativeIndicators = dataPerIndicators.filter(educativeIndicator => educativeIndicator.indicatorCode.includes("SE."));
-    const select= document.getElementById("peruEducativeIndicators");
-
-    educativeIndicators.forEach(function(element){
-        let option = document.createElement("option");
-        option.innerHTML= element.indicatorName;
-        select.appendChild(option);
-    });
-}
-showPeruEducationIndicators();
-*/
-//-------------------------MUESTRA DATOS ORDENADOS DE MAYOR A MENOR--------------------
-/*
-function TablaDatos(){
-    const dataPerIndicators = WORLDBANK.PER.indicators;
-    const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
-    const yearEconomicIndicator = Object.entries(dataEconomicIndicator[4].data);//REEVISAR AQUI PARA HACER LA FUNCION GENERAL//me regresa los data (año y porcentaje) del indicador en posicion 10 del tipo SL
-    const orderData = yearEconomicIndicator.sort(function(a,b){return a[1] - b[1]});//Me acomoda los array con los valores de la posición 1 de menor a mayor
-    const reverseOrderData=orderData.reverse(); //Me ordena de mayor a menor al arreglo anterior
-    const filterData = reverseOrderData.filter(sinvac => sinvac[1] != ""); //me muestra solo los valores que tenga mi array 
-    
-    const dataTable = document.getElementById("dataTable"); //tomamos la tabla desde el HTML
-    const bodyTable = document.createElement('tbody'); //Creamos los elementos de la tabla
-
-    filterData.forEach(function(datarow){ //tomamos cada arreglo (58) de mi arreglo reverseOrderData
-    let row = document.createElement("tr"); //Creamos nuestras <tr> que serán 58 por el length de nuesro arreglo
-
-        datarow.forEach(function(dataCell){
-            let cell = document.createElement("td"); //creamos nuestro <td> que son los valores que se van a insertar en cada <tr>
-            cell.appendChild(document.createTextNode(dataCell)); //es el texto que introduciremos con el valor anterior
-            row.appendChild(cell); //cada celda va a estar puesta en nuestro <tr>
-        });
-    bodyTable.appendChild(row); 
-});
-dataTable.appendChild(bodyTable);
-document.body.appendChild(dataTable);
-}
-TablaDatos();
-*/
-
-
-    
-//-------------------OBTENER PROMEDIO-----------------------
- const dataPerIndicators = WORLDBANK.PER.indicators;
- const dataEconomicIndicator= dataPerIndicators.filter(indicator => indicator.indicatorCode.includes("IC."));
- const yearEconomicIndicator1 = Object.values(dataEconomicIndicator[2].data);
-  const sumaorder = yearEconomicIndicator1.filter(element => element != ""); //Quita los años donde no haya dato
-  const suma = sumaorder.reduce((a,b)=>a+b);
- 
- const promedio = suma/sumaorder.length;
-  
-document.getElementById("promedio").innerHTML = promedio.toFixed(2);
 
 
 
