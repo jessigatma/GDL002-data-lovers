@@ -43,33 +43,30 @@ function generalTable(typeSelectedIndex, typeSelectedValue, labCountry) {
   const filteredData = dataLovers.filterData(dataIndicators, typeSelectedIndex);
   const averagedData = dataLovers.averageData(dataIndicators, typeSelectedIndex);
 
+  const year = dataLovers.yearChart(filteredData)
+  const percentage = dataLovers.indicatorChart(filteredData)
+ 
   document.getElementById("average").innerHTML = averagedData;
 
   const dataTable = document.getElementById("dataTable"); //tomamos la tabla desde el HTML
   const bodyTable = document.createElement('tbody'); //Creamos los elementos de la tabla
 
   filteredData.forEach(function (datarow) { //tomamos cada arreglo (58) de mi arreglo reverseOrderData
-    let row = document.createElement("tr"); //Creamos nuestras <tr> que serán 58 por el length de nuesro arreglo
-
+    let row = document.createElement("tr"); //Creamos nuestras <tr> que serán 58 por el length de nuestro arreglo
+  
     datarow.forEach(function (dataCell) {
       let cell = document.createElement("td"); //creamos nuestro <td> que son los valores que se van a insertar en cada <tr>
       cell.appendChild(document.createTextNode(dataCell)); //es el texto que introduciremos con el valor anterior
-      row.appendChild(cell); //cada celda va a estar puesta en nuestro <tr>
+      row.appendChild(cell); //cada celda va a estar puesta en nuestro <tr>    
     });
+    
     bodyTable.appendChild(row);
   });
   dataTable.appendChild(bodyTable);
   document.body.appendChild(dataTable);
+
+  drawChart(year,percentage,typeSelectedValue,labCountry);
 }
 
 
 
-// const firstScreen = document.getElementById("firstScreen");
-// const secondScreen = document.getElementById("secondScreen");
-// const thirdScreen = document.getElementById("thirdScreen");
-// const fourthScreen = document.getElementById("fourthScreen");
-
-//   firstScreen.style.display = "none";
-//   secondScreen.style.display = "block"; //me muestra la segunda pantalla
-//   thirdScreen.style.display = "block"; //me muestra la tercer pantalla
-//   fourthScreen.style.display = "block";

@@ -20,7 +20,7 @@ window.dataLovers = {
   filterData: function (dataIndicator, index) {
     const yearEconomicIndicator = Object.entries(dataIndicator[index].data); //regresa los data (año y porcentaje) del indicador 
     const orderData = yearEconomicIndicator.sort((a, b) => a[0] - b[0]); //acomoda los array con los valores de la posición 1 de menor a mayor
-    const reverseOrderData = orderData.reverse(); //Ordena de mayor a menor al arreglo anterior
+    const reverseOrderData = orderData; //Ordena de mayor a menor al arreglo anterior
     const filteringData = reverseOrderData.filter(sinvac => sinvac[1] != ""); //muestra solo los valores que tenga mi array 
     return filteringData
   },
@@ -35,14 +35,11 @@ window.dataLovers = {
       return average
     }
   },
+  yearChart: function(filter){
+    return filter.map(a=>a[0])
+  },
+  indicatorChart: function(filter){
+    return filter.map(b=>b[1])
+  }
 
 }
-
-
-// keepValue: function(event, dataTable){
-//   typeSelectedIndex = event.target.selectedIndex;
-//   typeSelectedValue = event.target.value;//me da el número de posición de los datos desplegados (la posición de array -1)
-//   //  console.log(typeSelectedValue, typeSelectedIndex);
-//   // dataTable(typeSelectedIndex,typeSelectedValue, country); 
-//   generalTable(typeSelectedIndex,typeSelectedValue);
-// },

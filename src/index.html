@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Data Lovers: Creando equidad</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+
   </head>
+
   <body>
-    
+
     <div id="firstScreen" class="title-background">
-        <h1><img src="https://i.ibb.co/SvnbLzg/CREANDOEQUIDADTITULO.png" id="CREANDOEQUIDADTITULO"></h1>
-          <span><img src="https://i.ibb.co/RpJJQjh/15191-Convertido-04alreves.png" id="SABIASQUE"> </span>
-    
-    
+      <h1><img src="https://i.ibb.co/SvnbLzg/CREANDOEQUIDADTITULO.png" id="CREANDOEQUIDADTITULO"></h1>
+      <span><img src="https://i.ibb.co/RpJJQjh/15191-Convertido-04alreves.png" id="SABIASQUE"> </span>
+
+
       <div class="container">
         <img src="https://i.ibb.co/hDWSn0c/cuadrodetexto.png">
-        <div id="RandomPhrase" class="textoencima"></div> 
+        <div id="RandomPhrase" class="textoencima"></div>
       </div>
 
-        <button id ="knowMore" class="button-knowMore">CONOCE MÁS</button>
+      <button id="knowMore" class="button-knowMore">CONOCE MÁS</button>
 
     </div>
 
@@ -31,89 +34,86 @@
 
     <div id="secondScreen" class="screen">
 
-        <h2><img src="https://i.ibb.co/ySd4xtC/37-03.png" id="listonbrecha"></h2>
+      <h2><img src="https://i.ibb.co/ySd4xtC/37-03.png" id="listonbrecha"></h2>
 
-        <article>Es la diferencia entre las proporciones masculina y femenina de un determinado indicador.
-          Destaca las desigualdades existentes entre hombres y mujeres en cualquier ámbito, 
-          en relación con el nivel de participación, acceso a oportunidades, derechos, poder e influencia, 
-          remuneración y beneficios, control y uso de los recursos, que les permiten garantizar su 
-          bienestar y desarrollo humano. </article>
+      <article>Es la diferencia entre las proporciones masculina y femenina de un determinado indicador.
+        Destaca las desigualdades existentes entre hombres y mujeres en cualquier ámbito,
+        en relación con el nivel de participación, acceso a oportunidades, derechos, poder e influencia,
+        remuneración y beneficios, control y uso de los recursos, que les permiten garantizar su
+        bienestar y desarrollo humano. </article>
 
-        <h3>en Latinoamérica*</h3>
-        
+      <h3>en Latinoamérica*</h3>
 
-        <button id="PERU" class="country-button">Perú</button>
 
-        <button id="BRASIL" class="country-button">Brasil</button>
+      <button id="PERU" class="country-button">Perú</button>
 
-        <button id="MEXICO" class="country-button">México</button>
-        
-        <button id="CHILE" class="country-button">Chile</button>
-        
-        <br><br>
-        <span>*países donde se encuentra Laboratoria</span>
-       
+      <button id="BRASIL" class="country-button">Brasil</button>
+
+      <button id="MEXICO" class="country-button">México</button>
+
+      <button id="CHILE" class="country-button">Chile</button>
+
+      <br><br>
+      <span>*países donde se encuentra Laboratoria</span>
+
     </div>
 
-    
+    <div id="thirdScreen" class="screen">
 
-  <div id="thirdScreen" class="screen">
+      <h4>Selecciona un tipo de indicador de Brecha de Género</h4>
 
-    <h4>Selecciona un tipo de indicador de Brecha de Género</h4>
-
-     <div class="dropdown">
+      <div class="dropdown">
         <img src="https://i.ibb.co/ZLLNc3V/indicadorfuerza.png" class="indicator-image">
-           <select id="laboralIndicators" class="dropdown-content">
-               <!-- <option value="default">Fuerza Laboral</option> -->
-           </select>
+        <select id="laboralIndicators" class="dropdown-content">
+          <!-- <option value="default">Fuerza Laboral</option> -->
+        </select>
       </div>
 
       <div class="dropdown">
-          <img src="https://i.ibb.co/L6cG1c9/indicadoreconomico.png" class="indicator-image">
-             <select id="economicIndicators" class="dropdown-content">
-                 <!-- <option value="default">Economico</option> -->
-             </select>
+        <img src="https://i.ibb.co/L6cG1c9/indicadoreconomico.png" class="indicator-image">
+        <select id="economicIndicators" class="dropdown-content">
+          <!-- <option value="default">Economico</option> -->
+        </select>
       </div>
 
       <div class="dropdown">
-          <img src="https://i.ibb.co/vB6R7p8/indicadoreducacion.png" class="indicator-image">
-             <select id="educativeIndicators" class="dropdown-content">
-                 <!-- <option value="default">Educativo</option> -->
-             </select>
+        <img src="https://i.ibb.co/vB6R7p8/indicadoreducacion.png" class="indicator-image">
+        <select id="educativeIndicators" class="dropdown-content">
+          <!-- <option value="default">Educativo</option> -->
+        </select>
       </div>
 
-  </div>
-  
- <br>
-  <div id= "fourthScreen">
-    
-    <p> Los datos del indicador:
-      <label id="indicatorName"></label> son:
-    </p>  
+    </div>
+
     <br>
+    <div id="fourthScreen">
+
+      <p> Los datos del indicador:
+        <label id="indicatorName"></label> son:
+      </p>
+      <br>
 
       <table id="dataTable">
         <th>Año</th>
         <th>(%)</th>
       </table>
 
-    <br>
-    <p>  
-    El promedio del indicador a lo largo de estos años es:
-      <label id="average"> </label> % 
-    </p>
-  
-    
-    
-  </div> 
+      <br>
+      <p>
+        El promedio del indicador a lo largo de estos años es:
+        <label id="average"> </label> %
+      </p>
+      <canvas id="speedChart"></canvas>
 
-  <script src="./data/worldbank/worldbank.js"></script>
-  <script src="./data/phrases.js"></script>
-  <script src="arrays.js"></script>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <div id="chart_div"></div>
-  
+    </div>
+
+    <script src="./data/worldbank/worldbank.js"></script>
+    <script src="./data/phrases.js"></script>
+    <script src="functions.js"></script>
+    <script src="elements.js"></script>
+    <script src="main.js"></script>
+    <script src="chart.js"></script>
+
   </body>
+
 </html>

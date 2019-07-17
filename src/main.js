@@ -16,7 +16,7 @@ function knowAbout(){
 }
 document.getElementById("knowMore").addEventListener("click",knowAbout,false);
 
-//------SEGUNDA PANTALLA-------FUNCIONES PARA LOS BOTONES DE LOS DISTINTOS PAISES------------------
+//------SEGUNDA Y TERCER PANTALLA-------FUNCIONES PARA LOS BOTONES DE LOS DISTINTOS PAISES------------------
 
 function COUNTRY(labCountry){
     let worldBankIndicators = WORLDBANK[labCountry].indicators
@@ -30,6 +30,7 @@ function COUNTRY(labCountry){
       typeSelectedValue = event.target.value;//me da el número de posición de los datos desplegados (la posición de array -1)
       generalTable(typeSelectedIndex,typeSelectedValue,labCountry);
     });
+
 
     const firstScreen = document.getElementById("firstScreen");
     const secondScreen = document.getElementById("secondScreen");
@@ -46,10 +47,9 @@ function COUNTRY(labCountry){
   document.getElementById("MEXICO").addEventListener("click",()=>(COUNTRY('MEX')));
   document.getElementById("CHILE").addEventListener("click",()=>(COUNTRY('CHL')));
   
-//-------TERCER PANTALLA--------------
 
 
-// generalTable();
+
 
 
 
