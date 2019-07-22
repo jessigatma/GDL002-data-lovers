@@ -192,7 +192,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) 
   {
-    .button-knowMore{
+  .button-knowMore{
       top: 80%;  
   }
   .chart-container { 
@@ -201,6 +201,10 @@ and (orientation : landscape)
   } 
   .indicator-data{
     top: 165%;
+  }
+  .button-table{
+    font-size: 20px;
+    top: 320%; 
   }
   }
 
@@ -262,21 +266,12 @@ and (orientation : landscape)
   height: 70%;
 }
 .chart-container { 
-  /* margin-left: 14%; */
   margin-top: 150%;
   width: 70%; 
- 
-  /*position: relative; */
-  /* height:30%;  */
 } 
 .button-table{
-  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 10px;
-  position: absolute ;
-  top: 410%; 
-  /* right:40%;
-  left:50%; */
-  background-color: rgb(218, 123, 111); 
+  top: 415%; 
 }
 #firstScreen { 
   text-align: center;
