@@ -49,7 +49,21 @@ function COUNTRY(labCountry){
   document.getElementById("CHILE").addEventListener("click",()=>(COUNTRY('CHL')));
   
 
+  function showTable(){
+    const firstScreen = document.getElementById("firstScreen");
+    const secondScreen = document.getElementById("secondScreen");
+    const thirdScreen = document.getElementById("thirdScreen");
+    const fourthScreen = document.getElementById("fourthScreen");
+    const tableScreen=document.getElementById("dataTable");
+    
+      firstScreen.style.display = "none";
+      secondScreen.style.display = "none"; //me muestra la segunda pantalla
+      thirdScreen.style.display = "none";
+      fourthScreen.style.display = "none";
+      tableScreen.style.display = "block"
 
+}
+document.getElementById("datasTable").addEventListener("click",showTable,false);
 
 
 

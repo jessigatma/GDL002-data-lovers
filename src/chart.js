@@ -2,12 +2,12 @@ function drawChart(year,percentage,value,country) {
   var speedCanvas = document.getElementById("speedChart");
 
   Chart.defaults.global.defaultFontFamily = "Nunito";
-  Chart.defaults.global.defaultFontSize = 18;
+  // Chart.defaults.global.defaultFontSize = 15;
 
   var speedData = {
     labels: year,
     datasets: [{
-      label: value + ' en ' + country,
+      label: 'Indicador' + ' en ' + country,
       data: percentage,
       backgroundColor: "rgba(255, 208, 91)"
     }]
@@ -15,12 +15,12 @@ function drawChart(year,percentage,value,country) {
 
   var chartOptions = {
     responsive:true,
-    // maintainAspectRatio: false,
+    // maintainAspectRatio: true,
     legend: {
       display: true,
       position: 'top',
       labels: {
-        boxWidth: 80,
+        boxWidth: 10,
         // fontColor: 'black'
       }
     },

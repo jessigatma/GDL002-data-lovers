@@ -124,6 +124,15 @@ td, tr, th{
   position: relative;
   /* height:30%;  */
 } 
+.button-table{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+  position: absolute ;
+  top: 410%; 
+  /* right:40%;
+  left:50%; */
+  background-color: rgb(218, 123, 111); 
+}
 
 #CREANDOEQUIDADTITLE {
   width: 60%;
@@ -170,6 +179,9 @@ td, tr, th{
 #fourthScreen{
   text-align: center;
   display: none;
+}
+#fifthScreen{
+  display:none;
 }
 #dataTable{
   display: none; 
@@ -253,10 +265,19 @@ and (orientation : landscape)
   /* margin-left: 14%; */
   margin-top: 150%;
   width: 70%; 
-  /* height: 80%; */
+ 
   /*position: relative; */
   /* height:30%;  */
 } 
+.button-table{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 10px;
+  position: absolute ;
+  top: 410%; 
+  /* right:40%;
+  left:50%; */
+  background-color: rgb(218, 123, 111); 
+}
 #firstScreen { 
   text-align: center;
 }
