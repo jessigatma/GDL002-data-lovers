@@ -17,16 +17,14 @@
   <body>
 
     <div id="firstScreen" class="title-background">
-      <h1><img src="https://i.ibb.co/SvnbLzg/CREANDOEQUIDADTITULO.png" id="CREANDOEQUIDADTITULO"></h1>
-      <span><img src="https://i.ibb.co/RpJJQjh/15191-Convertido-04alreves.png" id="SABIASQUE"> </span>
+      <img src="https://i.ibb.co/SvnbLzg/CREANDOEQUIDADTITULO.png" id="CREANDOEQUIDADTITLE">
+      <img src="https://i.ibb.co/RpJJQjh/15191-Convertido-04alreves.png" id="SABIASQUE"> 
 
-
-      <div class="container">
-        <img src="https://i.ibb.co/hDWSn0c/cuadrodetexto.png">
-        <div id="RandomPhrase" class="textoencima"></div>
-      </div>
+      <div id="RandomPhrase" class="textoencima"> </div>
 
       <button id="knowMore" class="button-knowMore">CONOCE MÁS</button>
+
+      
 
     </div>
 
@@ -93,17 +91,21 @@
       </p>
       <br>
 
-      <table id="dataTable">
-        <th>Año</th>
-        <th>(%)</th>
-      </table>
-
-      <br>
       <p>
         El promedio del indicador a lo largo de estos años es:
         <label id="average"> </label> %
       </p>
-      <canvas id="speedChart"></canvas>
+      
+        <table id="dataTable">
+          <th>Año</th>
+          <th>(%)</th>
+        </table>
+      
+      <div class="chart-container"> 
+
+        <canvas id="speedChart" class="chart-item item-chart"></canvas>
+
+      </div>
 
     </div>
 

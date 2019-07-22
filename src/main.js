@@ -26,9 +26,11 @@ function COUNTRY(labCountry){
     showEducationIndicators(worldBankIndicators);
 
     addEventListener("change", function(event){
+      typeSelectedIndicator = event.target.id;
+      console.log(typeSelectedIndicator)
       typeSelectedIndex = event.target.selectedIndex;
       typeSelectedValue = event.target.value;//me da el número de posición de los datos desplegados (la posición de array -1)
-      generalTable(typeSelectedIndex,typeSelectedValue,labCountry);
+      generalTable(typeSelectedIndicator,typeSelectedIndex,typeSelectedValue,labCountry);
     });
 
 

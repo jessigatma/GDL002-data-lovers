@@ -1,4 +1,5 @@
-body, html{
+ body, html{
+  align-content: center;
   margin: 0;
   padding:0;
   background-color: rgb(128,178,177);
@@ -39,47 +40,50 @@ table{
   overflow: hidden;
 }
 td, tr, th{
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 1rem;
     font-family: 'Nunito', sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     color: black;
 }
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+
 .textoencima{
     position: absolute;
-    top: 40%;
+    top: 1.5%;
     left: 10%;
     transform: translate(-50%, -50%);
-    width: 30%;
-    height: 20%;
-    margin: 10%;
-    padding: 0.05%;
+    width: 35%;
+    height: 25%;
+    margin: 30% 20%;
+    padding: 7% 7%;
     text-align: justify;
     font-family: 'Nunito', sans-serif;
     font-size: 25px;
+    background-color: palegoldenrod;
 }
 .button-knowMore{
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 15px;
-    position:absolute;
-    right:45%;
-    left:45%;
-    background-color: rgb(218, 123, 111);
-    /*right: 100px;*/
+    font-size: 20px;
+    position: absolute ;
+    top: 95%; 
+    right:40%;
+    left:50%;
+    background-color: rgb(218, 123, 111); 
 }
 .country-button{
     height: 80px;
     width: 80px;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: rgb(218, 123, 111);
     font-family: 'Lobster Two', cursive;
     font-size: 24px;
     color: white;
+    margin: 0% 2.5% 0% 2.5%;
+}
+.indicator-image{
+  width: 50%;
+  /* height: 10%; */
+  margin:0% 20% 0% 20%
 }
 .dropdown {
     position: relative;
@@ -99,27 +103,36 @@ td, tr, th{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-#CREANDOEQUIDADTITULO {
+
+.chart-container { 
+  margin-left: 12%;
+  margin-top: 5%;
+  width:70%; 
+  position: relative;
+  /* height:30%;  */
+} 
+
+#CREANDOEQUIDADTITLE {
   width: 60%;
-  height: 60%;
-  display: block; /* Centramos la imagen con el display*/
-  margin-left: auto; /* margen auto izquierdo */
-  margin-right: auto; /* margen auto derecho*/
-}
+  height: 60%; 
+  display: block; /*Centramos la imagen con el display*/
+  margin-left: auto; /*margen auto izquierdo*/
+  margin-right: auto; /*margen auto derecho*/
+ }
 #SABIASQUE{
   max-width: 30%;
   float:right;
 }
 #listonbrecha{
-  max-width: 50%;
+  max-width: 50%; 
   display: block; /* Centramos la imagen con el display*/
-  margin-left: auto; /* margen auto izquierdo */
-  margin-right: auto; /* margen auto derecho*/
+  margin-left: auto; /*margen auto izquierdo */
+  margin-right: auto; /*margen auto derecho */ 
 }
-#secondScreen { 
+ #secondScreen { 
   text-align: center;
 	display: none; /*Para ocultar o mostrar pantallas */
-}
+ }
 #thirdScreen {
   text-align: center;
 	display: none;
@@ -129,8 +142,20 @@ td, tr, th{
   display: none;
 }
 #dataTable{
-  display: table;
+  display: table; 
 }
 
-
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) 
+  {
+    .button-knowMore{
+      top: 80%;  
+  }
+  .chart-container { 
+    width:80%; 
+  } 
+  
+  }
 

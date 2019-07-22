@@ -35,13 +35,14 @@ function showEducationIndicators(data) {
 }
 //-----------FUNCIONES PARA MOSTRAR LA TABLA DE DATOS-------------------
 
-function generalTable(typeSelectedIndex, typeSelectedValue, labCountry) {
+function generalTable(typeSelectedIndicator, typeSelectedIndex, typeSelectedValue, labCountry) {
 
   document.getElementById("indicatorName").innerHTML = typeSelectedValue; //el valor dado al rango, lo arroja en el HTML
-
   const dataIndicators = WORLDBANK[labCountry].indicators;
-  const filteredData = dataLovers.filterData(dataIndicators, typeSelectedIndex);
-  const averagedData = dataLovers.averageData(dataIndicators, typeSelectedIndex);
+
+  const Indicators= dataLovers.indicatorsArray(typeSelectedIndicator,dataIndicators)
+  const filteredData = dataLovers.filterData(Indicators, typeSelectedIndex);
+  const averagedData = dataLovers.averageData(Indicators, typeSelectedIndex);
 
   const year = dataLovers.yearChart(filteredData)
   const percentage = dataLovers.indicatorChart(filteredData)

@@ -7,15 +7,30 @@ window.dataLovers = {
   },
   filterEconomicIndicators: function (data) {
     const economicIndicators = data.filter(economicIndicator => economicIndicator.indicatorCode.includes("IC."))
+    console.log(economicIndicators)
     return economicIndicators
   },
   filterLaboralIndicators: function (data) {
     const laboralIndicators = data.filter(laboralIndicator => laboralIndicator.indicatorCode.includes("SL."));
+    console.log(laboralIndicators)
     return laboralIndicators
   },
   filterEducativeIndicators: function (data) {
     const educativeIndicators = data.filter(educativeIndicator => educativeIndicator.indicatorCode.includes("SE."));
+    console.log(educativeIndicators)
     return educativeIndicators
+  },
+  indicatorsArray: function(typeSelectedIndicator,data){
+    if (typeSelectedIndicator == 'economicIndicators'){
+      const economicIndicators = data.filter(economicIndicator => economicIndicator.indicatorCode.includes("IC."))
+      return economicIndicators
+    } else if (typeSelectedIndicator == 'educativeIndicators'){
+      const educativeIndicators = data.filter(educativeIndicator => educativeIndicator.indicatorCode.includes("SE."))
+      return educativeIndicators
+    } else if(typeSelectedIndicator == 'laboralIndicators'){
+      const laboralIndicators = data.filter(laboralIndicator => laboralIndicator.indicatorCode.includes("SL."))
+      return laboralIndicators
+    }
   },
   filterData: function (dataIndicator, index) {
     const yearEconomicIndicator = Object.entries(dataIndicator[index].data); //regresa los data (año y porcentaje) del indicador 
@@ -26,6 +41,7 @@ window.dataLovers = {
   },
   averageData: function (dataIndicator, index) {
     const yearEconomicIndicator1 = Object.values(dataIndicator[index].data);
+    //console.log(yearEconomicIndicator1)
     const plusOrder = yearEconomicIndicator1.filter(element => element != ""); //Quita los años donde no haya dato
     if (plusOrder.length === 0) {
       alert('No hay datos para mostrar')
@@ -41,5 +57,4 @@ window.dataLovers = {
   indicatorChart: function(filter){
     return filter.map(b=>b[1])
   }
-
 }
