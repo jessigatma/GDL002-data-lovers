@@ -7,17 +7,14 @@ window.dataLovers = {
   },
   filterEconomicIndicators: function (data) {
     const economicIndicators = data.filter(economicIndicator => economicIndicator.indicatorCode.includes("IC."))
-    console.log(economicIndicators)
     return economicIndicators
   },
   filterLaboralIndicators: function (data) {
     const laboralIndicators = data.filter(laboralIndicator => laboralIndicator.indicatorCode.includes("SL."));
-    console.log(laboralIndicators)
     return laboralIndicators
   },
   filterEducativeIndicators: function (data) {
     const educativeIndicators = data.filter(educativeIndicator => educativeIndicator.indicatorCode.includes("SE."));
-    console.log(educativeIndicators)
     return educativeIndicators
   },
   indicatorsArray: function(typeSelectedIndicator,data){

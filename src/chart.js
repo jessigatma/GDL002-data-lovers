@@ -9,7 +9,7 @@ function drawChart(year,percentage,value,country) {
     datasets: [{
       label: value + ' en ' + country,
       data: percentage,
-      backgroundColor: "rgba(218, 123, 111)"
+      backgroundColor: "rgba(255, 208, 91)"
     }]
   };
 

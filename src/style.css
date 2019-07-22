@@ -22,7 +22,7 @@ h3{
   font-weight: 50;
 }
 h4{
-  text-align: left;
+  text-align: center;
   font-family: 'Lobster Two', cursive;
   color: white;
   font-size: 40px;
@@ -83,7 +83,7 @@ td, tr, th{
 .indicator-image{
   width: 50%;
   /* height: 10%; */
-  margin:0% 20% 0% 20%
+  margin:20% 20% 0% 20%
 }
 .dropdown {
     position: relative;
@@ -103,10 +103,23 @@ td, tr, th{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+.indicator-data{
+  position: absolute;
+  top: 180%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 60%;
+  margin: 30% 20%;
+  padding: 7% 7%;
+  text-align: justify;
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  background-color: palegoldenrod;
+}
 .chart-container { 
-  margin-left: 12%;
-  margin-top: 5%;
+  margin-left: 14%;
+  margin-top: 49%;
   width:70%; 
   position: relative;
   /* height:30%;  */
@@ -129,7 +142,24 @@ td, tr, th{
   margin-left: auto; /*margen auto izquierdo */
   margin-right: auto; /*margen auto derecho */ 
 }
- #secondScreen { 
+#arrow{
+  width: 2.5%;
+  margin-top: 1.5%
+}
+#datosdelindicador{
+  max-width: 50%; 
+  display: block; /* Centramos la imagen con el display*/
+  margin-left: auto; /*margen auto izquierdo */
+  margin-right: auto; /*margen auto derecho */ 
+  margin-top:5%;
+}
+#graficadelindicador{
+  max-width: 70%; 
+  display: block; /* Centramos la imagen con el display*/
+  margin-left: auto; /*margen auto izquierdo */
+  margin-right: auto; /*margen auto derecho */ 
+}
+#secondScreen { 
   text-align: center;
 	display: none; /*Para ocultar o mostrar pantallas */
  }
@@ -142,7 +172,7 @@ td, tr, th{
   display: none;
 }
 #dataTable{
-  display: table; 
+  display: none; 
 }
 
 @media only screen 
@@ -154,8 +184,86 @@ and (orientation : landscape)
       top: 80%;  
   }
   .chart-container { 
-    width:80%; 
+    margin-top: 70%;
+    width:70%; 
   } 
-  
+  .indicator-data{
+    top: 165%;
   }
+  }
+
+  @media only screen
+  and (min-width: 320px) 
+  and (max-width: 736px)
+{
+  article{
+    overflow: auto;
+    margin-left: 10%;
+    margin-right: 2%;
+    width: 50%;
+    height: 25%;
+    font-size: 15px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  h4{
+    font-size: 30px;
+  }
+  h5{
+    font-size:15px;
+  }
+  p{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(50,74,94);
+    font-size: 15px;
+    font-weight: 20;
+  }
+  .textoencima{
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    width: 80%;
+    height: 25%;
+    font-size: 15px;
+}
+.button-knowMore{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 15px;
+    position: absolute ;
+    top: 50%; 
+    right: 15%;
+}
+.country-button{
+  font-size: 20px;
+  margin: 0% 5% 5% 5%;
+}
+.indicator-image{
+  width: 40%;
+  margin:10%;
+}
+.indicator-data{
+  position: absolute;
+  top: 325%;
+  width: 60%;
+  height: 70%;
+}
+.chart-container { 
+  /* margin-left: 14%; */
+  margin-top: 150%;
+  width: 70%; 
+  /* height: 80%; */
+  /*position: relative; */
+  /* height:30%;  */
+} 
+#firstScreen { 
+  text-align: center;
+}
+
+#SABIASQUE{
+  max-width: 30%;
+  float:right;
+}
+}
 

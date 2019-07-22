@@ -43,22 +43,22 @@
       <h3>en Latinoamérica*</h3>
 
 
-      <button id="PERU" class="country-button">Perú</button>
+      <button id="PERU" class="country-button"> Perú </button>
 
       <button id="BRASIL" class="country-button">Brasil</button>
 
       <button id="MEXICO" class="country-button">México</button>
 
       <button id="CHILE" class="country-button">Chile</button>
-
-      <br><br>
-      <span>*países donde se encuentra Laboratoria</span>
+      <br>
+      <span>*países donde se encuentra Laboratoria</span> 
+      
 
     </div>
 
     <div id="thirdScreen" class="screen">
 
-      <h4>Selecciona un tipo de indicador de Brecha de Género</h4>
+      <h4> Selecciona un tipo de indicador de Brecha de Género </h4>
 
       <div class="dropdown">
         <img src="https://i.ibb.co/ZLLNc3V/indicadorfuerza.png" class="indicator-image">
@@ -86,28 +86,37 @@
     <br>
     <div id="fourthScreen">
 
-      <p> Los datos del indicador:
-        <label id="indicatorName"></label> son:
-      </p>
-      <br>
+      <img src="https://i.ibb.co/wd5BXyL/datosdelindicador.png" id="datosdelindicador" >
 
-      <p>
-        El promedio del indicador a lo largo de estos años es:
-        <label id="average"> </label> %
-      </p>
-      
-        <table id="dataTable">
-          <th>Año</th>
-          <th>(%)</th>
-        </table>
-      
+      <div class="indicator-data">
+       
+        <h5> Indicador: </h5>
+        <p> <label id="indicatorName"></label> </p>
+        <h5> País: </h5>
+        <p><label id="countryName"></label></p> 
+        <h5>El promedio del indicador:</h5>
+        <p><label id="average"> </label> (% / días)</p>
+              
+      </div> 
+
+      <table id="dataTable">
+        <th>Año</th>
+        <th>(%)</th>
+      </table>
+
       <div class="chart-container"> 
-
+        <img src="https://i.ibb.co/021JKq1/gr-ficadelindicador.png" id="graficadelindicador">
+        <br><br>
         <canvas id="speedChart" class="chart-item item-chart"></canvas>
 
       </div>
 
     </div>
+
+    <div id="fifthScreen">
+
+    </div>
+
 
     <script src="./data/worldbank/worldbank.js"></script>
     <script src="./data/phrases.js"></script>

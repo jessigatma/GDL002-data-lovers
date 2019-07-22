@@ -27,7 +27,6 @@ function COUNTRY(labCountry){
 
     addEventListener("change", function(event){
       typeSelectedIndicator = event.target.id;
-      console.log(typeSelectedIndicator)
       typeSelectedIndex = event.target.selectedIndex;
       typeSelectedValue = event.target.value;//me da el número de posición de los datos desplegados (la posición de array -1)
       generalTable(typeSelectedIndicator,typeSelectedIndex,typeSelectedValue,labCountry);
@@ -42,7 +41,7 @@ function COUNTRY(labCountry){
       firstScreen.style.display = "none";
       secondScreen.style.display = "block"; //me muestra la segunda pantalla
       thirdScreen.style.display = "block"; //me muestra la tercer pantalla
-      fourthScreen.style.display = "block"; 
+      fourthScreen.style.display = "none"; 
   }
   document.getElementById("PERU").addEventListener("click",()=>(COUNTRY('PER')));
   document.getElementById("BRASIL").addEventListener("click",()=>(COUNTRY('BRA')));

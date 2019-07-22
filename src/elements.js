@@ -37,7 +37,9 @@ function showEducationIndicators(data) {
 
 function generalTable(typeSelectedIndicator, typeSelectedIndex, typeSelectedValue, labCountry) {
 
+  document.getElementById("countryName").innerHTML = labCountry;
   document.getElementById("indicatorName").innerHTML = typeSelectedValue; //el valor dado al rango, lo arroja en el HTML
+  
   const dataIndicators = WORLDBANK[labCountry].indicators;
 
   const Indicators= dataLovers.indicatorsArray(typeSelectedIndicator,dataIndicators)
@@ -67,6 +69,17 @@ function generalTable(typeSelectedIndicator, typeSelectedIndex, typeSelectedValu
   document.body.appendChild(dataTable);
 
   drawChart(year,percentage,typeSelectedValue,labCountry);
+
+  const firstScreen = document.getElementById("firstScreen");
+  const secondScreen = document.getElementById("secondScreen");
+  const thirdScreen = document.getElementById("thirdScreen");
+  const fourthScreen = document.getElementById("fourthScreen");
+    
+    firstScreen.style.display = "none";
+    secondScreen.style.display = "block"; //me muestra la segunda pantalla
+    thirdScreen.style.display = "block"; //me muestra la tercer pantalla
+    fourthScreen.style.display = "block"; 
+
 }
 
 
