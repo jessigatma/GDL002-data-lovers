@@ -1,0 +1,333 @@
+ body,
+ html {
+   align-content: center;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(128, 178, 177);
+ }
+
+ article {
+   font-family: 'Nunito', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   color: black;
+   text-align: center;
+   background: palegoldenrod;
+   margin: 20px 200px 20px 200px;
+   overflow: hidden;
+   padding: 50px;
+ }
+
+ h3 {
+   font-family: 'Lobster Two', cursive;
+   color: white;
+   font-size: 50px;
+   font-weight: 50;
+ }
+
+ h4 {
+   text-align: center;
+   font-family: 'Lobster Two', cursive;
+   color: white;
+   font-size: 40px;
+   font-weight: 30;
+ }
+
+ p {
+   text-align: center;
+   font-family: 'Nunito', sans-serif;
+   color: rgb(50, 74, 94);
+   font-size: 25px;
+   font-weight: 20;
+ }
+
+ table {
+   margin: auto;
+   overflow: hidden;
+ }
+
+ td,
+ tr,
+ th {
+   border: 1px solid white;
+   padding: 1rem;
+   font-family: 'Nunito', sans-serif;
+   font-size: 15px;
+   color: black;
+ }
+
+ .textoencima {
+   position: absolute;
+   top: 1.5%;
+   left: 10%;
+   transform: translate(-50%, -50%);
+   width: 35%;
+   height: 25%;
+   margin: 30% 20%;
+   padding: 7% 7%;
+   text-align: justify;
+   font-family: 'Nunito', sans-serif;
+   font-size: 25px;
+   background-color: palegoldenrod;
+ }
+
+ .button-knowMore {
+   font-family: 'PT Sans Narrow', sans-serif;
+   font-size: 20px;
+   position: absolute;
+   top: 95%;
+   right: 40%;
+   left: 50%;
+   background-color: rgb(218, 123, 111);
+ }
+
+ .country-button {
+   height: 80px;
+   width: 80px;
+   border-radius: 100%;
+   background-color: rgb(218, 123, 111);
+   font-family: 'Lobster Two', cursive;
+   font-size: 24px;
+   color: white;
+   margin: 0% 2.5% 0% 2.5%;
+ }
+
+ .indicator-image {
+   width: 50%;
+   /* height: 10%; */
+   margin: 20% 20% 0% 20%
+ }
+
+ .dropdown {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+ }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-family: 'Nunito', sans-serif;
+   font-size: 15px;
+ }
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+ .indicator-data {
+   position: absolute;
+   top: 180%;
+   left: 30%;
+   transform: translate(-50%, -50%);
+   width: 50%;
+   height: 60%;
+   margin: 30% 20%;
+   padding: 7% 7%;
+   text-align: justify;
+   font-family: 'Nunito', sans-serif;
+   font-size: 25px;
+   background-color: palegoldenrod;
+ }
+
+ .chart-container {
+   margin-left: 14%;
+   margin-top: 49%;
+   width: 70%;
+   position: relative;
+   /* height:30%;  */
+ }
+
+ .button-table {
+   font-family: 'PT Sans Narrow', sans-serif;
+   font-size: 20px;
+   position: absolute;
+   top: 410%;
+   /* right:40%;
+  left:50%; */
+   background-color: rgb(218, 123, 111);
+ }
+
+ #CREANDOEQUIDADTITLE {
+   width: 60%;
+   height: 60%;
+   display: block;
+   /*Centramos la imagen con el display*/
+   margin-left: auto;
+   /*margen auto izquierdo*/
+   margin-right: auto;
+   /*margen auto derecho*/
+ }
+
+ #SABIASQUE {
+   max-width: 30%;
+   float: right;
+ }
+
+ #listonbrecha {
+   max-width: 50%;
+   display: block;
+   /* Centramos la imagen con el display*/
+   margin-left: auto;
+   /*margen auto izquierdo */
+   margin-right: auto;
+   /*margen auto derecho */
+ }
+
+ #arrow {
+   width: 2.5%;
+   margin-top: 1.5%
+ }
+
+ #datosdelindicador {
+   max-width: 50%;
+   display: block;
+   /* Centramos la imagen con el display*/
+   margin-left: auto;
+   /*margen auto izquierdo */
+   margin-right: auto;
+   /*margen auto derecho */
+   margin-top: 5%;
+ }
+
+ #graficadelindicador {
+   max-width: 70%;
+   display: block;
+   /* Centramos la imagen con el display*/
+   margin-left: auto;
+   /*margen auto izquierdo */
+   margin-right: auto;
+   /*margen auto derecho */
+ }
+
+ #secondScreen {
+   text-align: center;
+   display: none;
+   /*Para ocultar o mostrar pantallas */
+ }
+
+ #thirdScreen {
+   text-align: center;
+   display: none;
+ }
+
+ #fourthScreen {
+   text-align: center;
+   display: none;
+ }
+
+ #fifthScreen {
+   display: none;
+ }
+
+ #dataTable {
+   display: block;
+ }
+
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+   .button-knowMore {
+     top: 80%;
+   }
+
+   .chart-container {
+     margin-top: 70%;
+     width: 70%;
+   }
+
+   .indicator-data {
+     top: 165%;
+   }
+
+   .button-table {
+     font-size: 20px;
+     top: 320%;
+   }
+ }
+
+ @media only screen and (min-width: 320px) and (max-width: 736px) {
+   article {
+     overflow: auto;
+     margin-left: 10%;
+     margin-right: 2%;
+     width: 50%;
+     height: 25%;
+     font-size: 15px;
+   }
+
+   h3 {
+     font-size: 30px;
+   }
+
+   h4 {
+     font-size: 30px;
+   }
+
+   h5 {
+     font-size: 15px;
+   }
+
+   p {
+     text-align: center;
+     font-family: 'Nunito', sans-serif;
+     color: rgb(50, 74, 94);
+     font-size: 15px;
+     font-weight: 20;
+   }
+
+   .textoencima {
+     position: absolute;
+     top: 12%;
+     left: 30%;
+     width: 80%;
+     height: 25%;
+     font-size: 15px;
+   }
+
+   .button-knowMore {
+     font-family: 'PT Sans Narrow', sans-serif;
+     font-size: 15px;
+     position: absolute;
+     top: 50%;
+     right: 15%;
+   }
+
+   .country-button {
+     font-size: 20px;
+     margin: 0% 5% 5% 5%;
+   }
+
+   .indicator-image {
+     width: 40%;
+     margin: 10%;
+   }
+
+   .indicator-data {
+     position: absolute;
+     top: 325%;
+     width: 60%;
+     height: 70%;
+   }
+
+   .chart-container {
+     margin-top: 150%;
+     width: 70%;
+   }
+
+   .button-table {
+     font-size: 10px;
+     top: 415%;
+   }
+
+   #firstScreen {
+     text-align: center;
+   }
+
+   #SABIASQUE {
+     max-width: 30%;
+     float: right;
+   }
+ }

@@ -1,285 +1,238 @@
- body, html{
-  align-content: center;
+* {
   margin: 0;
-  padding:0;
-  background-color: rgb(128,178,177);
-}
-article{
-  font-family: 'Nunito', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: black;
-  text-align: center;
-  background:palegoldenrod;
-  margin: 20px 200px 20px 200px;
-  overflow: hidden;
-  padding: 50px;
-}
-h3{
-  font-family: 'Lobster Two', cursive;
-  color: white;
-  font-size: 50px;
-  font-weight: 50;
-}
-h4{
-  text-align: center;
-  font-family: 'Lobster Two', cursive;
-  color: white;
-  font-size: 40px;
-  font-weight: 30;
-}
-p{
-  text-align: center;
-  font-family: 'Nunito', sans-serif;
-  color: rgb(50,74,94);
-  font-size: 25px;
-  font-weight: 20;
-}
-table{
-  margin:auto;
-  overflow: hidden;
-}
-td, tr, th{
-    border: 1px solid white;
-    padding: 1rem;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    color: black;
 }
 
-.textoencima{
-    position: absolute;
-    top: 1.5%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    width: 35%;
-    height: 25%;
-    margin: 30% 20%;
-    padding: 7% 7%;
-    text-align: justify;
-    font-family: 'Nunito', sans-serif;
-    font-size: 25px;
-    background-color: palegoldenrod;
+body {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+
+  color: white;
 }
-.button-knowMore{
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 20px;
-    position: absolute ;
-    top: 95%; 
-    right:40%;
-    left:50%;
-    background-color: rgb(218, 123, 111); 
+
+h1 {
+  font-size: 450%;
 }
-.country-button{
-    height: 80px;
-    width: 80px;
-    border-radius: 100%;
-    background-color: rgb(218, 123, 111);
-    font-family: 'Lobster Two', cursive;
-    font-size: 24px;
-    color: white;
-    margin: 0% 2.5% 0% 2.5%;
+
+h2 {
+  font-size: 350%;
 }
-.indicator-image{
-  width: 50%;
-  /* height: 10%; */
-  margin:20% 20% 0% 20%
+
+h3 {
+  font-size: 300%;
+  /* color: black; */
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-    cursor:pointer;
+
+h4 {
+  font-size: 250%;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
+
+h5 {
+  font-size: 150%;
 }
-.dropdown:hover .dropdown-content {
-    display: block;
+
+label {
+  font-size: 80%;
 }
-.indicator-data{
-  position: absolute;
-  top: 180%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: 60%;
-  margin: 30% 20%;
-  padding: 7% 7%;
+
+article {
+  font-size: 120%;
+  background-color: black;
+  color: white;
+  filter: opacity(80%);
+  margin: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: justify;
-  font-family: 'Nunito', sans-serif;
-  font-size: 25px;
-  background-color: palegoldenrod;
-}
-.chart-container { 
-  margin-left: 14%;
-  margin-top: 49%;
-  width:70%; 
-  position: relative;
-  /* height:30%;  */
-} 
-.button-table{
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 20px;
-  position: absolute ;
-  top: 410%; 
-  /* right:40%;
-  left:50%; */
-  background-color: rgb(218, 123, 111); 
+  font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
-#CREANDOEQUIDADTITLE {
-  width: 60%;
-  height: 60%; 
-  display: block; /*Centramos la imagen con el display*/
-  margin-left: auto; /*margen auto izquierdo*/
-  margin-right: auto; /*margen auto derecho*/
- }
-#SABIASQUE{
-  max-width: 30%;
-  float:right;
+.introduction {
+  /* The image used */
+  background-image: url("./images/_MG_6457.jpg");
+  /* Set a specific height */
+  min-height: 600px;
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-size: cover;
 }
-#listonbrecha{
-  max-width: 50%; 
-  display: block; /* Centramos la imagen con el display*/
-  margin-left: auto; /*margen auto izquierdo */
-  margin-right: auto; /*margen auto derecho */ 
+
+.random-text {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 180%;
+  font-weight: bold;
+  background-color: black;
+  filter: opacity(70%);
+  margin-top: 11%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-#arrow{
-  width: 2.5%;
-  margin-top: 1.5%
+
+.knowMore {
+  font-size: 100%;
+  padding: 1%;
+  width: 15%;
+  margin-top: 13.5%;
 }
-#datosdelindicador{
-  max-width: 50%; 
-  display: block; /* Centramos la imagen con el display*/
-  margin-left: auto; /*margen auto izquierdo */
-  margin-right: auto; /*margen auto derecho */ 
-  margin-top:5%;
+
+.country {
+  font-size: 100%;
+  margin: 5% 3%;
+  padding: 1%;
+  width: 10%;
 }
-#graficadelindicador{
-  max-width: 70%; 
-  display: block; /* Centramos la imagen con el display*/
-  margin-left: auto; /*margen auto izquierdo */
-  margin-right: auto; /*margen auto derecho */ 
-}
-#secondScreen { 
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #6c4675;
+  border: none;
+  color: #FFFFFF;
   text-align: center;
-	display: none; /*Para ocultar o mostrar pantallas */
- }
-#thirdScreen {
-  text-align: center;
-	display: none;
+  transition: all 0.5s;
+  cursor: pointer;
+
 }
-#fourthScreen{
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.gender-gap {
+  background-image: url('./images/julie-johnson-Z6vXFzX1wvs-unsplash.jpg');
+  background-size: cover;
+  min-height: 600px;
+}
+
+.title-gender-gap {
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+  letter-spacing: 5px;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+}
+
+.box-container {
+  flex: 3;
+  /* align-items: center; */
+}
+
+.indicator-image {
+  background-color: black;
+  border-radius: 100%;
+  width: 50%;
+  margin: 10%;
+  /* padding: 20%; */
+}
+
+.dropdown-content {
+  /* display: block; */
+  font-size: 100%;
+  /* font-family: sans-serif; */
+  font-weight: 700;
+  color: #444;
+  line-height: 1.3;
+  padding: 2%;
+  width: 50%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  /* background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), */
+  /* linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%); */
+  /* background-repeat: no-repeat, repeat; */
+  /* background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%; */
+}
+
+.dropdown-content::-ms-expand {
+  display: none;
+}
+
+.dropdown-content:hover {
+  border-color: #888;
+}
+
+.dropdown-content:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px #6c4675;
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+.dropdown-content option {
+  font-weight: normal;
+}
+
+.show-data {
+  background-image: url("./images/hackaton1.jpg");
+  /* Set a specific height */
+  min-height: 600px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.indicator-data {
+  /* font-size: 120%; */
+  background-color: black;
+  color: white;
+  filter: opacity(75%);
+  margin-left: 12%;
+  margin-right: 12%;
+  padding-right: 15%;
+  padding-left: 15%;
+  /* margin-top: 5%; */
+  text-align: justify;
+  /* font-family: 'Segoe UI', Tahoma, sans-serif; */
+}
+
+
+#secondScreen {
   text-align: center;
   display: none;
 }
-#fifthScreen{
-  display:none;
-}
-#dataTable{
-  display: none; 
-}
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) 
-  {
-  .button-knowMore{
-      top: 80%;  
-  }
-  .chart-container { 
-    margin-top: 70%;
-    width:70%; 
-  } 
-  .indicator-data{
-    top: 165%;
-  }
-  .button-table{
-    font-size: 20px;
-    top: 320%; 
-  }
-  }
-
-  @media only screen
-  and (min-width: 320px) 
-  and (max-width: 736px)
-{
-  article{
-    overflow: auto;
-    margin-left: 10%;
-    margin-right: 2%;
-    width: 50%;
-    height: 25%;
-    font-size: 15px;
-  }
-  h3{
-    font-size: 30px;
-  }
-  h4{
-    font-size: 30px;
-  }
-  h5{
-    font-size:15px;
-  }
-  p{
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    color: rgb(50,74,94);
-    font-size: 15px;
-    font-weight: 20;
-  }
-  .textoencima{
-    position: absolute;
-    top: 12%;
-    left: 30%;
-    width: 80%;
-    height: 25%;
-    font-size: 15px;
-}
-.button-knowMore{
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 15px;
-    position: absolute ;
-    top: 50%; 
-    right: 15%;
-}
-.country-button{
-  font-size: 20px;
-  margin: 0% 5% 5% 5%;
-}
-.indicator-image{
-  width: 40%;
-  margin:10%;
-}
-.indicator-data{
-  position: absolute;
-  top: 325%;
-  width: 60%;
-  height: 70%;
-}
-.chart-container { 
-  margin-top: 150%;
-  width: 70%; 
-} 
-.button-table{
-  font-size: 10px;
-  top: 415%; 
-}
-#firstScreen { 
+#thirdScreen {
   text-align: center;
+  display: none;
 }
 
-#SABIASQUE{
-  max-width: 30%;
-  float:right;
+#fourthScreen {
+  text-align: center;
+  display: none;
 }
-}
-

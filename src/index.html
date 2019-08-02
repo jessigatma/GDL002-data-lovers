@@ -1,122 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Data Lovers: Creando equidad</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Asap|Catamaran|Gochi+Hand|Poiret+One&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
-
   </head>
 
   <body>
-
-    <div id="firstScreen" class="title-background">
-      <img src="https://i.ibb.co/SvnbLzg/CREANDOEQUIDADTITULO.png" id="CREANDOEQUIDADTITLE">
-      <img src="https://i.ibb.co/RpJJQjh/15191-Convertido-04alreves.png" id="SABIASQUE"> 
-
-      <div id="RandomPhrase" class="textoencima"> </div>
-
-      <button id="knowMore" class="button-knowMore">CONOCE MÁS</button>
-
-      
-
+    <div id="firstScreen" class="introduction">
+      <h1>CREANDO EQUIDAD</h1>
+      <br />
+      <h4>¿Sabías qué?</h4>
+      <div id="RandomPhrase" class="random-text"></div>
+      <button
+        id="knowMore"
+        class="button knowMore"
+        style="vertical-align:middle"
+      >
+        <span>CONOCE MÁS</span>
+      </button>
     </div>
 
+    <div id="secondScreen" class="screen gender-gap">
+      <h1 class="title-gender-gap">Brecha de Género</h1>
+      <article>
+        La brecha de género es la diferencia entre las proporciones masculina y
+        femenina de un determinado indicador. Destaca las desigualdades
+        existentes entre hombres y mujeres en cualquier ámbito, en relación con
+        el nivel de participación, acceso a oportunidades, derechos, poder e
+        influencia, remuneración y beneficios, control y uso de los recursos,
+        que les permiten garantizar su bienestar y desarrollo humano.
+      </article>
+      <h3>Datos del Banco Mundial en Latinoamérica*</h3>
 
+      <button id="PERU" class="button country"><span>Perú</span></button>
+      <button id="BRASIL" class="button country"><span>Brasil</span></button>
+      <button id="MEXICO" class="button country"><span>México</span></button>
+      <button id="CHILE" class="button country"><span>Chile</span></button>
 
-    <div id="secondScreen" class="screen">
+      <p class="">*países donde se encuentra Laboratoria</p>
 
-      <h2><img src="https://i.ibb.co/ySd4xtC/37-03.png" id="listonbrecha"></h2>
+      <div id="thirdScreen">
+        <h4>Selecciona un tipo de indicador de Brecha de Género</h4>
+        <div class="container">
+          <div class="dropdown box-container">
+            <img src="./images/trabajadoras.jpg" class="indicator-image" />
+            <!-- <h4>Fuerza Laboral</h4> -->
+            <select id="laboralIndicators" class="dropdown-content">
+              <option value="default">Fuerza Laboral</option>
+            </select>
+          </div>
 
-      <article>Es la diferencia entre las proporciones masculina y femenina de un determinado indicador.
-        Destaca las desigualdades existentes entre hombres y mujeres en cualquier ámbito,
-        en relación con el nivel de participación, acceso a oportunidades, derechos, poder e influencia,
-        remuneración y beneficios, control y uso de los recursos, que les permiten garantizar su
-        bienestar y desarrollo humano. </article>
+          <div class="dropdown box-container">
+            <img src="./images/economy.png" class="indicator-image" />
+            <!-- <h4>Economía</h4> -->
+            <select id="economicIndicators" class="dropdown-content">
+              <option value="default">Económico</option>
+            </select>
+          </div>
 
-      <h3>en Latinoamérica*</h3>
-
-
-      <button id="PERU" class="country-button"> Perú </button>
-
-      <button id="BRASIL" class="country-button">Brasil</button>
-
-      <button id="MEXICO" class="country-button">México</button>
-
-      <button id="CHILE" class="country-button">Chile</button>
-      <br>
-      <span>*países donde se encuentra Laboratoria</span> 
-      
-
+          <div class="dropdown box-container">
+            <img src="./images/laboratoriaschool.jpg" class="indicator-image" />
+            <!-- <h4>Educación</h4> -->
+            <select id="educativeIndicators" class="dropdown-content">
+              <option value="default">Educativo</option>
+            </select>
+          </div>
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
     </div>
 
-    <div id="thirdScreen" class="screen">
-
-      <h4> Selecciona un tipo de indicador de Brecha de Género </h4>
-
-      <div class="dropdown">
-        <img src="https://i.ibb.co/ZLLNc3V/indicadorfuerza.png" class="indicator-image">
-        <select id="laboralIndicators" class="dropdown-content">
-          <!-- <option value="default">Fuerza Laboral</option> -->
-        </select>
-      </div>
-
-      <div class="dropdown">
-        <img src="https://i.ibb.co/L6cG1c9/indicadoreconomico.png" class="indicator-image">
-        <select id="economicIndicators" class="dropdown-content">
-          <!-- <option value="default">Economico</option> -->
-        </select>
-      </div>
-
-      <div class="dropdown">
-        <img src="https://i.ibb.co/vB6R7p8/indicadoreducacion.png" class="indicator-image">
-        <select id="educativeIndicators" class="dropdown-content">
-          <!-- <option value="default">Educativo</option> -->
-        </select>
-      </div>
-
-    </div>
-
-    <br>
-    <div id="fourthScreen">
-
-      <img src="https://i.ibb.co/wd5BXyL/datosdelindicador.png" id="datosdelindicador" >
-
+    <div id="fourthScreen" class="show-data">
       <div class="indicator-data">
-       
-        <h5> Indicador: </h5>
-        <p> <label id="indicatorName"></label> </p>
-        <h5> País: </h5>
-        <p><label id="countryName"></label></p> 
-        <h5>El promedio del indicador:</h5>
-        <p><label id="average"> </label> (% / días)</p>
-              
-      </div> 
-
-      <div class="chart-container"> 
-        <img src="https://i.ibb.co/021JKq1/gr-ficadelindicador.png" id="graficadelindicador">
-        <br><br>
-        <canvas id="speedChart" class="chart-item item-chart"></canvas>
+        <h5>Indicador: <label id="indicatorName"></label></h5>
+        <h5>País: <label id="countryName"></label></h5>
+        <h5>
+          El promedio del indicador: <label id="average"> </label> (% / días)
+        </h5>
       </div>
 
-    <div>
-     <button id="datasTable" class="button-table"> Mostrar tabla de datos </button>
-    </div>
+      <div class="chart-container">
+        <br /><br />
+        <canvas
+          id="speedChart"
+          style="position: relative; height:40vh; width:80vw"
+          class="chart-item item-chart"
+        ></canvas>
+      </div>
 
-    <table id="dataTable">
+      <!-- <div>
+        <button id="datasTable" class="button-table">
+          Mostrar tabla de datos
+        </button>
+      </div>
+
+      <table id="dataTable">
         <th>Año</th>
         <th>(%)</th>
-    </table>
-
+      </table> -->
     </div>
-
-
 
     <script src="./data/worldbank/worldbank.js"></script>
     <script src="./data/phrases.js"></script>
@@ -124,7 +119,5 @@
     <script src="elements.js"></script>
     <script src="main.js"></script>
     <script src="chart.js"></script>
-
   </body>
-
 </html>
