@@ -48,7 +48,7 @@ article {
 
 .introduction {
   /* The image used */
-  background-image: url("https://i.ibb.co/Q9b7cbZ/hackaton1.jpg");
+  background-image: url('https://i.ibb.co/HncKSQw/MG-6457.jpg');
   /* Set a specific height */
   min-height: 600px;
   /* Create the parallax scrolling effect */
@@ -88,11 +88,10 @@ article {
   border-radius: 4px;
   background-color: #6c4675;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   transition: all 0.5s;
   cursor: pointer;
-
 }
 
 .button span {
@@ -163,8 +162,8 @@ article {
   box-sizing: border-box;
   margin: 0;
   border: 1px solid #aaa;
-  box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
-  border-radius: .5em;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5em;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -197,7 +196,7 @@ article {
 }
 
 .show-data {
-  background-image: url("https://i.ibb.co/Q9b7cbZ/hackaton1.jpg");
+  background-image: url('https://i.ibb.co/Q9b7cbZ/hackaton1.jpg');
   /* Set a specific height */
   min-height: 600px;
   /* Create the parallax scrolling effect */
