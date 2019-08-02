@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Data Lovers: Creando equidad</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Asap|Catamaran|Gochi+Hand|Poiret+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Asap|Catamaran|Gochi+Hand|Poiret+One&display=swap"
+      rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
   </head>
 
@@ -22,11 +18,7 @@
       <br />
       <h4>¿Sabías qué?</h4>
       <div id="RandomPhrase" class="random-text"></div>
-      <button
-        id="knowMore"
-        class="button knowMore"
-        style="vertical-align:middle"
-      >
+      <button id="knowMore" class="button knowMore" style="vertical-align:middle">
         <span>CONOCE MÁS</span>
       </button>
     </div>
@@ -85,7 +77,7 @@
 
     <div id="fourthScreen" class="show-data">
       <div class="indicator-data">
-        <h5>Indicador: <label id="indicatorName"></label></h5>
+        <h5 class=indicator>Indicador: <label id="indicatorName"></label></h5>
         <h5>País: <label id="countryName"></label></h5>
         <h5>
           El promedio del indicador: <label id="average"> </label> (% / días)
@@ -94,14 +86,12 @@
 
       <div class="chart-container">
         <br /><br />
-        <canvas
-          id="speedChart"
-          style="position: relative; height:40vh; width:80vw"
-          class="chart-item item-chart"
-        ></canvas>
+        <canvas id="speedChart" style="position: relative; height:40vh; width:80vw"
+          class="chart-item item-chart"></canvas>
       </div>
 
-      <!-- <div>
+
+      <div>
         <button id="datasTable" class="button-table">
           Mostrar tabla de datos
         </button>
@@ -110,8 +100,9 @@
       <table id="dataTable">
         <th>Año</th>
         <th>(%)</th>
-      </table> -->
+      </table>
     </div>
+
 
     <script src="./data/worldbank/worldbank.js"></script>
     <script src="./data/phrases.js"></script>
@@ -120,4 +111,5 @@
     <script src="main.js"></script>
     <script src="chart.js"></script>
   </body>
+
 </html>
